@@ -1,0 +1,85 @@
+<header data-bs-theme="dark">
+    <div class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand pe-sm-3 p-0" href="index.html">
+                <span class="text-primary flex-shrink-0 me-2">
+                    <svg class="text-bg-light" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6L8 12V16H12L18 10M14 6L17 3L21 7L18 10M14 6L18 10M10 4L4 4L4 20L20 20V14"
+                            stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                МАГАЗИН
+            </a>
+            <!-- END Brand -->
+
+            <!-- Cart  -->
+            <button class="btn btn-primary btn-sm fs-sm order-lg-3  d-sm-inline-flex  position-relative"
+                href="/cart.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">5</span>Корзина
+            </button>
+            <!-- END Cart  -->
+
+            <!-- Hamburger -->
+            <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- ENDHamburger -->
+
+            <!-- Nav -->
+            <nav class="collapse navbar-collapse" id="mainNavbar">
+                <!-- Mainmenu -->
+                <ul class="navbar-nav navbar-nav-scroll me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">Каталог товаров</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Форма</a></li>
+                            <li><a class="dropdown-item" href="#">Кепки</a></li>
+                            <li><a class="dropdown-item" href="#">Футболки</a></li>
+                            <li><a class="dropdown-item" href="#">Майки</a></li>
+                            <li><a class="dropdown-item" href="#">Шорты</a></li>
+                            <li><a class="dropdown-item" href="#">Обувь</a></li>
+                            <li><a class="dropdown-item" href="#">Мерч</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="components/typography.html">Доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="docs/getting-started.html">Контакты</a>
+                    </li>
+                </ul>
+                <!-- END Mainmenu -->
+
+
+                <!-- user is Logged -->
+                <ul class="navbar-nav navbar-nav-scroll me-3">
+                    <li class="nav-item position-relative">
+                        <a href="/profile/"
+                            class="align-items-center dropdown-toggle justify-content-end text-decoration-none"
+                            aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            0test@mail.ru
+                        </a>
+                        <ul class="dropdown-menu shadow text-lg-end text-small">
+                            <li><a class="dropdown-item" href="/profile/">Profile</a></li>
+                            <li><a class="dropdown-item" href="/profile/create">Create</a></li>
+                            <li><a class="dropdown-item" href="/profile/your-posts">Ur posts</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/?logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- END user is Logged -->
+            </nav>
+            <!-- END Nav -->
+        </div>
+    </div>
+</header>

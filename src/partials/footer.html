@@ -1,0 +1,141 @@
+<footer class="bd-footer bg-black footer mt-auto py-3 bg-body-tertiary">
+    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+        <div class="row">
+            <div class="col-lg-3 mb-3">
+                <a class="align-items-center d-flex mb-2 mb-4 text-body-emphasis text-decoration-none" href="/">
+                    <span class="me-2">
+                        <svg class="text-bg-light " width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 6L8 12V16H12L18 10M14 6L17 3L21 7L18 10M14 6L18 10M10 4L4 4L4 20L20 20V14"
+                                stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </span>
+                    МАГАЗИН
+                </a>
+                <ul class="list-unstyled small">
+                    <li class="mb-2">Задизайнено на голом бутстрапе в рамках уроков по Evolution CMS</li>
+                    <li class="mb-2">Можно распространять, продавать, сдавать в аренду ну или чего вы там ещё придумаете
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                <h5>Товары</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/">Форма</a></li>
+                    <li class="mb-2"><a href="/docs/5.3/">Кепки</a></li>
+                    <li class="mb-2"><a href="/docs/5.3/examples/">Футболки</a></li>
+                    <li class="mb-2"><a href="https://icons.getbootstrap.com/">Майки</a></li>
+                    <li class="mb-2"><a href="https://themes.getbootstrap.com/">Шорты</a></li>
+                    <li class="mb-2"><a href="https://blog.getbootstrap.com/">Обувь</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+                <h5>О нас</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/docs/5.3/getting-started/">Про магазин</a></li>
+                    <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Доставка</a></li>
+                    <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Оплата</a></li>
+                    <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Возврат</a></li>
+                    <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Гарантии</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+                <h5>О компании</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="https://github.com/twbs/bootstrap" target="_blank"
+                            rel="noopener">Адреса и телефоны</a></li>
+                    <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev" target="_blank"
+                            rel="noopener">Вакансии</a></li>
+                    <li class="mb-2"><a href="https://github.com/twbs/icons" target="_blank" rel="noopener">Icons</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+                <h5>Наши соцсети</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues" target="_blank"
+                            rel="noopener">ВК</a></li>
+                    <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions" target="_blank"
+                            rel="noopener">ТГ</a></li>
+                    <li class="mb-2"><a href="https://github.com/sponsors/twbs" target="_blank" rel="noopener">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<section class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCart">
+    <div data-commerce-cart="" class="offcanvas-body">
+        <div class="offcanvas-header p-0">
+            <div class="d-flex flex-grow-1 justify-content-between">
+
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Корзина</h5>
+                <a href="/cart.html" class="btn btn-primary btn-sm">К заказу</a>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        </div>
+        <div class="mt-3">
+            <div class="alert alert-success fs-6">
+                Товары: <strong><span id="totalitems">4</span> шт.</strong> на 40 101,00 руб.
+            </div>
+            <ol class="list-group">
+                <li data-id="5" data-commerce-row="b1d68bd1fb6921f7" class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="me-auto">
+                            <div class="fw-bold">Основной корпус машины</div>
+                            5 462,00 руб.
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                            1
+                            <input type="hidden" name="count" class="form-control" value="1"
+                                data-commerce-action="recount">
+                        </span>
+                    </div>
+
+                    <div class="small text-muted mb-2">
+                        <span class="badge bg-black rounded-pill" color="">Белый</span> <span
+                            class="badge bg-black rounded-pill" stat="">Выбран чекбокс</span>
+                    </div>
+                    <div class="align-items-center d-flex mb-2 mt-3">
+                        <div class="input-group flex-nowrap">
+                            <input data-commerce-action="decrease" type="button" value=" - "
+                                class=" btn btn-outline-primary btn-sm " data-field="quantity">
+                            <input data-commerce-action="increase" type="button" value=" + "
+                                class=" btn btn-outline-primary  btn-sm " data-field="quantity">
+                        </div>
+                        <button class="btn btn-close btn-sm " type="button" data-commerce-action="remove"> </button>
+                    </div>
+                </li>
+                <li data-id="6" data-commerce-row="" class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="me-auto">
+                            <div class="fw-bold">Гнутьевая рабочая голова</div>
+                            12 965,00 руб.
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                            1
+                            <input type="hidden" name="count" class="form-control" value="1"
+                                data-commerce-action="recount">
+                        </span>
+                    </div>
+
+                    <div class="small text-muted mb-2">
+
+                    </div>
+                    <div class="align-items-center d-flex mb-2 mt-3">
+                        <div class="input-group flex-nowrap">
+                            <input data-commerce-action="decrease" type="button" value=" - "
+                                class=" btn btn-outline-primary btn-sm " data-field="quantity">
+                            <input data-commerce-action="increase" type="button" value=" + "
+                                class=" btn btn-outline-primary  btn-sm " data-field="quantity">
+                        </div>
+                        <button class="btn btn-close btn-sm " type="button" data-commerce-action="remove"> </button>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
