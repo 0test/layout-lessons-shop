@@ -1,9 +1,9 @@
-<header data-bs-theme="dark">
+<header data-bs-theme="dark" class="pb-5">
     <div class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
         <div class="container">
 
             <!-- Brand -->
-            <a class="navbar-brand pe-sm-3 p-0" href="index.html">
+            <a class="navbar-brand  flex-lg-grow-0 flex-sm-grow-1 p-0 pe-sm-3" href="index.html">
                 <span class="text-primary flex-shrink-0 me-2">
                     <svg class="text-bg-light" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -16,10 +16,17 @@
             <!-- END Brand -->
 
             <!-- Cart  -->
-            <button class="btn btn-primary btn-sm fs-sm order-lg-3  d-sm-inline-flex  position-relative"
+            <button class="btn btn-primary  fs-sm order-lg-3  d-sm-inline-flex  position-relative"
                 href="/cart.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
                 aria-controls="offcanvasCart">
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">5</span>Корзина
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">5</span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 d-lg-none d-block d-sm-none"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg>
+                <span class="d-lg-block d-none d-sm-block">Корзина</span>
             </button>
             <!-- END Cart  -->
 
@@ -36,8 +43,7 @@
                 <!-- Mainmenu -->
                 <ul class="navbar-nav navbar-nav-scroll me-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside" aria-expanded="false">Каталог товаров</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Каталог товаров</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Форма</a></li>
                             <li><a class="dropdown-item" href="#">Кепки</a></li>
@@ -56,6 +62,32 @@
                     </li>
                 </ul>
                 <!-- END Mainmenu -->
+
+
+
+
+                <!-- user not logged -->
+                <!-- 
+                <ul class="navbar-nav navbar-nav-scroll me-3">
+                    <li class="nav-item position-relative">
+                        <a href="#" class="align-items-center dropdown-toggle justify-content-end text-decoration-none"
+                            aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            Вход
+                        </a>
+                        <ul class="dropdown-menu shadow text-lg-end text-small">
+                            <li><a href="#" class="dropdown-item" data-bs-toggle="offcanvas" data-bs-target="#login_canvas"
+                                aria-controls="login_canvas">
+                                Login
+                            </a></li>
+                            <li><a href="#" class="dropdown-item" data-bs-toggle="offcanvas"
+                                data-bs-target="#register_canvas" aria-controls="register_canvas">
+                                Register
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                -->
+                <!-- END user not logged -->
 
 
                 <!-- user is Logged -->

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark" class="h-100">
+
+<head>
+    {{> headtags}}
+    <title>Каталог</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <main class="d-flex flex-column h-100 justify-content-between">
+        {{> header }}
+
+        <!-- Page container -->
+        <main class="container flex-fill px-4 py-5">
+
+        {{> bread }}
+
+            <!-- Page title -->
+            <div class="row pt-xl-3 mt-n1 mt-sm-0">
+                <div class="col-lg-9">
+                    <h1 class="pb-2 pb-sm-3">Home decoration</h1>
+                </div>
+            </div>
+            <div class="row pb-2 pb-sm-4">
+
+                <!-- Sidebar (offcanvas on sreens < 992px) -->
+                <aside class="col-lg-3">
+                    <div class="offcanvas-lg offcanvas-start" id="shopSidebar">
+                        <!-- Body -->
+                        <div class="offcanvas-body pt-2 pt-lg-0 pe-lg-4 flex-column">
+
+                            <!-- Categories (accordion with checkboxes) -->
+                            <h3 class="h5">Categories</h3>
+                            <div class="accordion accordion-alt pb-2 mb-4" id="shopCategories">
+                                <div class="accordion-item mb-0">
+                                    <h4 class="accordion-header">
+                                        <button class="accordion-button fs-xl fw-medium py-2" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#livingRoom" aria-expanded="true"
+                                            aria-controls="livingRoom">
+                                            <span class="fs-base">Living room</span>
+                                        </button>
+                                    </h4>
+                                    <div class="accordion-collapse collapse show" id="livingRoom"
+                                        data-bs-parent="#shopCategories">
+                                        <div class="accordion-body py-1 mb-1">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="lr-all">
+                                                <label class="form-check-label d-flex align-items-center" for="lr-all">
+                                                    <span class="text-nav fw-medium">View all</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">697</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" checked id="lr-vases">
+                                                <label class="form-check-label d-flex align-items-center" for="lr-vases">
+                                                    <span class="text-nav fw-medium">Vases</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">234</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="lr-mirrors">
+                                                <label class="form-check-label d-flex align-items-center" for="lr-mirrors">
+                                                    <span class="text-nav fw-medium">Mirrors</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">182</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="lr-paintings">
+                                                <label class="form-check-label d-flex align-items-center" for="lr-paintings">
+                                                    <span class="text-nav fw-medium">Paintings</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">133</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="lr-furniture">
+                                                <label class="form-check-label d-flex align-items-center" for="lr-furniture">
+                                                    <span class="text-nav fw-medium">Furniture</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">24</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" checked id="lr-clocks">
+                                                <label class="form-check-label d-flex align-items-center" for="lr-clocks">
+                                                    <span class="text-nav fw-medium">Clocks</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">49</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="lr-frames">
+                                                <label class="form-check-label d-flex align-items-center" for="lr-frames">
+                                                    <span class="text-nav fw-medium">Photo frames</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">75</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-0">
+                                    <h4 class="accordion-header">
+                                        <button class="accordion-button collapsed fs-xl fw-medium py-2" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#kitchen" aria-expanded="false"
+                                            aria-controls="kitchen">
+                                            <span class="fs-base">Kitchen</span>
+                                        </button>
+                                    </h4>
+                                    <div class="accordion-collapse collapse" id="kitchen" data-bs-parent="#shopCategories">
+                                        <div class="accordion-body py-1 mb-1">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="kitchen-all">
+                                                <label class="form-check-label d-flex align-items-center" for="kitchen-all">
+                                                    <span class="text-nav fw-medium">View all</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="kitchen-cutlery">
+                                                <label class="form-check-label d-flex align-items-center" for="kitchen-cutlery">
+                                                    <span class="text-nav fw-medium">Cutlery</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">387</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="kitchen-storage">
+                                                <label class="form-check-label d-flex align-items-center" for="kitchen-storage">
+                                                    <span class="text-nav fw-medium">Storage</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">124</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="kitchen-bins">
+                                                <label class="form-check-label d-flex align-items-center" for="kitchen-bins">
+                                                    <span class="text-nav fw-medium">Waste bins</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">59</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="kitchen-holders">
+                                                <label class="form-check-label d-flex align-items-center" for="kitchen-holders">
+                                                    <span class="text-nav fw-medium">Holders</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">227</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="kitchen-sinks">
+                                                <label class="form-check-label d-flex align-items-center" for="kitchen-sinks">
+                                                    <span class="text-nav fw-medium">Sinks</span>
+                                                    <span class="fs-xs text-body-secondary ms-auto">16</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Color (checkboxes) -->
+                            <h3 class="h5">Color</h3>
+                            <div class="d-flex pb-2 mb-4">
+                                <div class="me-2 mb-2">
+                                    <input class="btn-check" type="checkbox" value="Black" checked id="color1">
+                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color1">
+                                        <span class="d-block rounded-circle"
+                                            style="width: 1.5rem; height: 1.5rem; background-color: #1d211f;"></span>
+                                    </label>
+                                </div>
+                                <div class="me-2 mb-2">
+                                    <input class="btn-check" type="checkbox" value="Soft beige" id="color2">
+                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color2">
+                                        <span class="d-block rounded-circle"
+                                            style="width: 1.5rem; height: 1.5rem; background-color: #d9c9a1;"></span>
+                                    </label>
+                                </div>
+                                <div class="me-2 mb-2">
+                                    <input class="btn-check" type="checkbox" value="Bluish sky" id="color3">
+                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color3">
+                                        <span class="d-block rounded-circle"
+                                            style="width: 1.5rem; height: 1.5rem; background-color: #a1b7d9;"></span>
+                                    </label>
+                                </div>
+                                <div class="me-2 mb-2">
+                                    <input class="btn-check" type="checkbox" value="Green grass" id="color4">
+                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color4">
+                                        <span class="d-block rounded-circle"
+                                            style="width: 1.5rem; height: 1.5rem; background-color: #74947d;"></span>
+                                    </label>
+                                </div>
+                                <div class="me-2 mb-2">
+                                    <input class="btn-check" type="checkbox" value="Woody brown" id="color5">
+                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color5">
+                                        <span class="d-block bg-size-cover bg-position-center rounded-circle"
+                                            style="width: 1.5rem; height: 1.5rem; background-color: #af8352; background-image: url(assets/img/shop/pattern/wood.jpg);"></span>
+                                    </label>
+                                </div>
+                                <div class="mb-2">
+                                    <input class="btn-check" type="checkbox" value="Gray marble" id="color6">
+                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color6">
+                                        <span class="d-block bg-size-cover bg-position-center rounded-circle"
+                                            style="width: 1.5rem; height: 1.5rem; background-color: #c0c0c0; background-image: url(assets/img/shop/pattern/marble.jpg);"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Brand (checkboxes) -->
+                            <h3 class="h5">Brand</h3>
+                            <div class="pb-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Pazolinni" id="brand1">
+                                    <label class="form-check-label d-flex align-items-center" for="brand1">
+                                        <span class="text-nav fw-medium">Pazolinni</span>
+                                        <span class="fs-xs text-body-secondary ms-auto">48</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Tither Room" checked id="brand2">
+                                    <label class="form-check-label d-flex align-items-center" for="brand2">
+                                        <span class="text-nav fw-medium">Tither Room</span>
+                                        <span class="fs-xs text-body-secondary ms-auto">32</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Moissy Decor" id="brand3">
+                                    <label class="form-check-label d-flex align-items-center" for="brand3">
+                                        <span class="text-nav fw-medium">Moissy Decor</span>
+                                        <span class="fs-xs text-body-secondary ms-auto">25</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Victorio Via" id="brand4">
+                                    <label class="form-check-label d-flex align-items-center" for="brand4">
+                                        <span class="text-nav fw-medium">Victorio Via</span>
+                                        <span class="fs-xs text-body-secondary ms-auto">56</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+
+                <!-- Product grid -->
+                <div class="col-lg-9">
+
+                    <!-- Active filters + Sorting -->
+                    <div class="d-flex align-items-start justify-content-between mb-4">
+                        <div class="me-3">
+                            <div class="nav d-md-none">
+                                <a class="nav-link dropdown-toggle fs-sm p-0 mb-2" href="#activeFilters"
+                                    data-bs-toggle="collapse">Active filters</a>
+                            </div>
+                            <div class="collapse d-md-block" id="activeFilters">
+                                <div class="pt-2 pt-md-0">
+                                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2"
+                                        href="#">
+                                        <span class="d-inline-flex align-items-center text-nowrap px-1">
+                                            Vases<i class="ai-circle-x fs-base ms-1"></i>
+                                        </span>
+                                    </a>
+                                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2"
+                                        href="#">
+                                        <span class="d-inline-flex align-items-center text-nowrap px-1">
+                                            Clocks<i class="ai-circle-x fs-base ms-1"></i>
+                                        </span>
+                                    </a>
+                                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2"
+                                        href="#">
+                                        <span class="d-inline-flex align-items-center text-nowrap px-1">
+                                            Tither Room<i class="ai-circle-x fs-base ms-1"></i>
+                                        </span>
+                                    </a>
+                                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2"
+                                        href="#">
+                                        <span class="d-inline-flex align-items-center text-nowrap px-1">
+                                            $10 - $50<i class="ai-circle-x fs-base ms-1"></i>
+                                        </span>
+                                    </a>
+                                    <button class="btn btn-sm btn-secondary rounded-pill fw-medium py-1 px-2" type="button">
+                                        <span class="px-1">Remove all filters</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center flex-shrink-0 mb-2"><span
+                                class="text-body-secondary text-nowrap fs-sm">Sort by:</span>
+                            <select class="form-select form-select-flush py-0">
+                                <option value="popular">Most popular</option>
+                                <option value="low-high">Low-High price</option>
+                                <option value="high-low">High-Low price</option>
+                                <option value="rating">Average rating</option>
+                                <option value="az">A-Z order</option>
+                                <option value="za">Z-A order</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+                        <!-- Item -->
+                        <div class="col pb-2 pb-sm-3">
+                            <div class="card-hover position-relative bg-secondary rounded-1 p-3 mb-4">
+                                <span
+                                    class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                                <button
+                                    class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                                    type="button" aria-label="Add to Favorites">
+                                    <i class="ai-heart fs-xl text-nav"></i>
+                                </button>
+                                <img class="d-block mx-auto" src="/img/products/01.png" width="226" alt="Product">
+                            </div>
+                            <div class="d-flex mb-1">
+                                <h3 class="h6 mb-0">
+                                    <a href="shop-single.html">Loft style lamp</a>
+                                </h3>
+
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="me-2">$21.00</span>
+                                <del class="fs-sm text-body-secondary">$35.00</del>
+                                <div class="nav ms-auto" >
+                                    <a class="nav-link fs-lg py-2 px-1" href="#" aria-label="Add to Cart">
+                                        <i class="bi bi-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="row gy-3 align-items-center pt-3 pt-sm-4 mt-md-2">
+                        <div class="col col-md-4 col-6 order-md-1 order-1">
+
+                        </div>
+                        <div class="col col-md-4 col-12 order-md-2 order-3 text-center">
+                            
+                        </div>
+                        <div class="col col-md-4 col-6 order-md-3 order-2">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination pagination-sm justify-content-end">
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1<span class="visually-hidden">(current)</span></span>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        {{>modals}}
+        {{>footer}}
+        {{>footer_scripts}}
+</body>
+
+</html>

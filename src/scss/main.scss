@@ -6,26 +6,19 @@
     vertical-align: -0.125em;
     fill: currentcolor;
 }
-:root{
-
-	--bs-body-font-size: $fontsize;
+:root {
+    --bs-body-font-size: $fontsize;
 }
 body {
-	main{
-		margin: 0 auto;
-	}
-	.main_app {
-		margin-top: 100px;
-	}
-	.one_post_edit {
-		left:40px;
-		top:20px;
-	}
-	.change_avatar{
-		position: absolute;
-		left:10px;
-		top:10px;
-	}
-
+    main {
+        margin: 0 auto;
+    }
 }
 
+@media (max-width: 767px) {
+    .btn {
+        padding: 0.55rem 0.85rem;
+        font-size: 0.875rem;
+        border-radius: 0.175rem;
+    }
+}

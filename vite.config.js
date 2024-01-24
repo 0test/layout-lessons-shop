@@ -12,6 +12,7 @@ export default {
 			input: {
 				index: path.resolve(__dirname, 'src/index.html'),
 				profile: path.resolve(__dirname, 'src/text.html'),
+                catalog: path.resolve(__dirname, 'src/catalog.html'),
 			},
 			output: {
 				assetFileNames: (assetInfo) => {
