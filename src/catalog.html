@@ -13,7 +13,7 @@
         <!-- Page container -->
         <main class="container flex-fill px-4 py-5">
 
-        {{> bread }}
+            {{> bread }}
 
             <!-- Page title -->
             <div class="row pt-xl-3 mt-n1 mt-sm-0">
@@ -26,212 +26,98 @@
                 <!-- Sidebar (offcanvas on sreens < 992px) -->
                 <aside class="col-lg-3">
                     <div class="offcanvas-lg offcanvas-start" id="shopSidebar">
-                        <!-- Body -->
-                        <div class="offcanvas-body pt-2 pt-lg-0 pe-lg-4 flex-column">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Filters</h5>
+                            <button class="btn-close" type="button" data-bs-dismiss="offcanvas"
+                                data-bs-target="#shopSidebar" aria-label="Close"></button>
+                        </div>
 
-                            <!-- Categories (accordion with checkboxes) -->
-                            <h3 class="h5">Categories</h3>
-                            <div class="accordion accordion-alt pb-2 mb-4" id="shopCategories">
-                                <div class="accordion-item mb-0">
-                                    <h4 class="accordion-header">
-                                        <button class="accordion-button fs-xl fw-medium py-2" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#livingRoom" aria-expanded="true"
-                                            aria-controls="livingRoom">
-                                            <span class="fs-base">Living room</span>
-                                        </button>
-                                    </h4>
-                                    <div class="accordion-collapse collapse show" id="livingRoom"
-                                        data-bs-parent="#shopCategories">
-                                        <div class="accordion-body py-1 mb-1">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="lr-all">
-                                                <label class="form-check-label d-flex align-items-center" for="lr-all">
-                                                    <span class="text-nav fw-medium">View all</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">697</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" checked id="lr-vases">
-                                                <label class="form-check-label d-flex align-items-center" for="lr-vases">
-                                                    <span class="text-nav fw-medium">Vases</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">234</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="lr-mirrors">
-                                                <label class="form-check-label d-flex align-items-center" for="lr-mirrors">
-                                                    <span class="text-nav fw-medium">Mirrors</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">182</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="lr-paintings">
-                                                <label class="form-check-label d-flex align-items-center" for="lr-paintings">
-                                                    <span class="text-nav fw-medium">Paintings</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">133</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="lr-furniture">
-                                                <label class="form-check-label d-flex align-items-center" for="lr-furniture">
-                                                    <span class="text-nav fw-medium">Furniture</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">24</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" checked id="lr-clocks">
-                                                <label class="form-check-label d-flex align-items-center" for="lr-clocks">
-                                                    <span class="text-nav fw-medium">Clocks</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">49</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="lr-frames">
-                                                <label class="form-check-label d-flex align-items-center" for="lr-frames">
-                                                    <span class="text-nav fw-medium">Photo frames</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">75</span>
-                                                </label>
-                                            </div>
-                                        </div>
+                        <div class="offcanvas-body flex-column">
+                            <!-- checkboxes -->
+                            <div class="fltr_block pb-4">
+                                <h5 class="title fltr_name pb-2">Checkboxes</h5>
+                                <div class="fltr_content content">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="c1">
+                                        <label class="form-check-label d-flex align-items-center" for="c1">
+                                            Default input
+                                            <span class="fltr_count   text-body-secondary ms-auto">48</span>
+
+                                        </label>
                                     </div>
-                                </div>
-                                <div class="accordion-item mb-0">
-                                    <h4 class="accordion-header">
-                                        <button class="accordion-button collapsed fs-xl fw-medium py-2" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#kitchen" aria-expanded="false"
-                                            aria-controls="kitchen">
-                                            <span class="fs-base">Kitchen</span>
-                                        </button>
-                                    </h4>
-                                    <div class="accordion-collapse collapse" id="kitchen" data-bs-parent="#shopCategories">
-                                        <div class="accordion-body py-1 mb-1">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="kitchen-all">
-                                                <label class="form-check-label d-flex align-items-center" for="kitchen-all">
-                                                    <span class="text-nav fw-medium">View all</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">813</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="kitchen-cutlery">
-                                                <label class="form-check-label d-flex align-items-center" for="kitchen-cutlery">
-                                                    <span class="text-nav fw-medium">Cutlery</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">387</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="kitchen-storage">
-                                                <label class="form-check-label d-flex align-items-center" for="kitchen-storage">
-                                                    <span class="text-nav fw-medium">Storage</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">124</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="kitchen-bins">
-                                                <label class="form-check-label d-flex align-items-center" for="kitchen-bins">
-                                                    <span class="text-nav fw-medium">Waste bins</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">59</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="kitchen-holders">
-                                                <label class="form-check-label d-flex align-items-center" for="kitchen-holders">
-                                                    <span class="text-nav fw-medium">Holders</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">227</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="kitchen-sinks">
-                                                <label class="form-check-label d-flex align-items-center" for="kitchen-sinks">
-                                                    <span class="text-nav fw-medium">Sinks</span>
-                                                    <span class="fs-xs text-body-secondary ms-auto">16</span>
-                                                </label>
-                                            </div>
-                                        </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="c2" checked>
+                                        <label class="form-check-label d-flex align-items-center" for="c2">
+                                            Checked switch checkbox
+                                        </label>
                                     </div>
                                 </div>
                             </div>
+                            <!-- END checkboxes -->
 
+                            <!-- radio -->
+                            <div class="fltr_block pb-4">
+                                <h5 class="title fltr_name pb-2">Radio</h5>
+                                <div class="fltr_content content">
+                                    <div class="form-check ">
+                                        <input name="r1" class="form-check-input" type="radio" role="switch" id="r1"
+                                            checked>
+                                        <label class="form-check-label d-flex align-items-center" for="r1">
+                                            Default radio input
+                                            <span class="fltr_count   text-body-secondary ms-auto">48</span>
 
-                            <!-- Color (checkboxes) -->
-                            <h3 class="h5">Color</h3>
-                            <div class="d-flex pb-2 mb-4">
-                                <div class="me-2 mb-2">
-                                    <input class="btn-check" type="checkbox" value="Black" checked id="color1">
-                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color1">
-                                        <span class="d-block rounded-circle"
-                                            style="width: 1.5rem; height: 1.5rem; background-color: #1d211f;"></span>
-                                    </label>
-                                </div>
-                                <div class="me-2 mb-2">
-                                    <input class="btn-check" type="checkbox" value="Soft beige" id="color2">
-                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color2">
-                                        <span class="d-block rounded-circle"
-                                            style="width: 1.5rem; height: 1.5rem; background-color: #d9c9a1;"></span>
-                                    </label>
-                                </div>
-                                <div class="me-2 mb-2">
-                                    <input class="btn-check" type="checkbox" value="Bluish sky" id="color3">
-                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color3">
-                                        <span class="d-block rounded-circle"
-                                            style="width: 1.5rem; height: 1.5rem; background-color: #a1b7d9;"></span>
-                                    </label>
-                                </div>
-                                <div class="me-2 mb-2">
-                                    <input class="btn-check" type="checkbox" value="Green grass" id="color4">
-                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color4">
-                                        <span class="d-block rounded-circle"
-                                            style="width: 1.5rem; height: 1.5rem; background-color: #74947d;"></span>
-                                    </label>
-                                </div>
-                                <div class="me-2 mb-2">
-                                    <input class="btn-check" type="checkbox" value="Woody brown" id="color5">
-                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color5">
-                                        <span class="d-block bg-size-cover bg-position-center rounded-circle"
-                                            style="width: 1.5rem; height: 1.5rem; background-color: #af8352; background-image: url(assets/img/shop/pattern/wood.jpg);"></span>
-                                    </label>
-                                </div>
-                                <div class="mb-2">
-                                    <input class="btn-check" type="checkbox" value="Gray marble" id="color6">
-                                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color6">
-                                        <span class="d-block bg-size-cover bg-position-center rounded-circle"
-                                            style="width: 1.5rem; height: 1.5rem; background-color: #c0c0c0; background-image: url(assets/img/shop/pattern/marble.jpg);"></span>
-                                    </label>
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input name="r1" class="form-check-input" type="radio" role="switch" id="r2">
+                                        <label class="form-check-label d-flex align-items-center" for="r2">
+                                            Checked radio
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- END radio -->
 
-                            <!-- Brand (checkboxes) -->
-                            <h3 class="h5">Brand</h3>
-                            <div class="pb-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="Pazolinni" id="brand1">
-                                    <label class="form-check-label d-flex align-items-center" for="brand1">
-                                        <span class="text-nav fw-medium">Pazolinni</span>
-                                        <span class="fs-xs text-body-secondary ms-auto">48</span>
+
+                            <!-- pattern -->
+                            <div class="js-filter-block  fltr_block d-flex pb-2 mb-4">
+                                <h5 class="title fltr_name">Color</h5>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="btn-check form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">
+                                        <span class="d-block rounded-circle"
+                                            style="background-image: url(img/products/marble.jpg);"></span>
                                     </label>
+
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="Tither Room" checked id="brand2">
-                                    <label class="form-check-label d-flex align-items-center" for="brand2">
-                                        <span class="text-nav fw-medium">Tither Room</span>
-                                        <span class="fs-xs text-body-secondary ms-auto">32</span>
-                                    </label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">2</label>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="Moissy Decor" id="brand3">
-                                    <label class="form-check-label d-flex align-items-center" for="brand3">
-                                        <span class="text-nav fw-medium">Moissy Decor</span>
-                                        <span class="fs-xs text-body-secondary ms-auto">25</span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="Victorio Via" id="brand4">
-                                    <label class="form-check-label d-flex align-items-center" for="brand4">
-                                        <span class="text-nav fw-medium">Victorio Via</span>
-                                        <span class="fs-xs text-body-secondary ms-auto">56</span>
-                                    </label>
+
+
+
+
+                            </div>
+                            <!-- pattern -->
+
+                            <!-- select -->
+                            <div class=" fltr_block pb-2">
+                                <h5 class="title fltr_name">Color</h5>
+                                <div class="fltr_content content">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
                             </div>
+                            <!-- END select -->
+
                         </div>
                     </div>
                 </aside>
@@ -240,63 +126,76 @@
                 <!-- Product grid -->
                 <div class="col-lg-9">
 
-                    <!-- Active filters + Sorting -->
-                    <div class="d-flex align-items-start justify-content-between mb-4">
-                        <div class="me-3">
-                            <div class="nav d-md-none">
-                                <a class="nav-link dropdown-toggle fs-sm p-0 mb-2" href="#activeFilters"
-                                    data-bs-toggle="collapse">Active filters</a>
-                            </div>
-                            <div class="collapse d-md-block" id="activeFilters">
-                                <div class="pt-2 pt-md-0">
-                                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2"
-                                        href="#">
-                                        <span class="d-inline-flex align-items-center text-nowrap px-1">
-                                            Vases<i class="ai-circle-x fs-base ms-1"></i>
-                                        </span>
-                                    </a>
-                                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2"
-                                        href="#">
-                                        <span class="d-inline-flex align-items-center text-nowrap px-1">
-                                            Clocks<i class="ai-circle-x fs-base ms-1"></i>
-                                        </span>
-                                    </a>
-                                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2"
-                                        href="#">
-                                        <span class="d-inline-flex align-items-center text-nowrap px-1">
-                                            Tither Room<i class="ai-circle-x fs-base ms-1"></i>
-                                        </span>
-                                    </a>
-                                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2"
-                                        href="#">
-                                        <span class="d-inline-flex align-items-center text-nowrap px-1">
-                                            $10 - $50<i class="ai-circle-x fs-base ms-1"></i>
-                                        </span>
-                                    </a>
-                                    <button class="btn btn-sm btn-secondary rounded-pill fw-medium py-1 px-2" type="button">
-                                        <span class="px-1">Remove all filters</span>
-                                    </button>
-                                </div>
+                    <!-- Active filters  -->
+                    <div class="align-items-baseline d-flex justify-content-between mb-4">
+
+                        <div class="nav d-md-none">
+                            <a class="nav-link dropdown-toggle fs-sm p-0 mb-2" href="#activeFilters"
+                                data-bs-toggle="collapse" aria-expanded="true">Фильтры</a>
+                        </div>
+                        <div class="d-md-flex collapse " id="activeFilters">
+                            <div class="btn-group d-block">
+                                <button type="button" class="btn btn-icon btn-sm ">
+                                    <span class="me-1">Button 1</span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-x-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16">
+                                        </path>
+                                        <path
+                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708">
+                                        </path>
+
+                                    </svg>
+
+                                </button>
+                                <button type="button" class="btn btn-icon btn-sm ">
+                                    <span class="me-1">Button 2</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-x-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16">
+                                        </path>
+                                        <path
+                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708">
+                                        </path>
+                                    </svg>
+
+                                </button>
+                                <button type="button" class="btn btn-icon btn-sm ">
+                                    <span class="me-1">Button 3</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-x-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16">
+                                        </path>
+                                        <path
+                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708">
+                                        </path>
+                                    </svg>
+                                </button>
+
+                                <button type="button" class=" btn btn-icon btn-sm text-danger-emphasis">
+                                    <span class="me-1">Сбросить фильтры</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-x-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16">
+                                        </path>
+                                        <path
+                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708">
+                                        </path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center flex-shrink-0 mb-2"><span
-                                class="text-body-secondary text-nowrap fs-sm">Sort by:</span>
-                            <select class="form-select form-select-flush py-0">
-                                <option value="popular">Most popular</option>
-                                <option value="low-high">Low-High price</option>
-                                <option value="high-low">High-Low price</option>
-                                <option value="rating">Average rating</option>
-                                <option value="az">A-Z order</option>
-                                <option value="za">Z-A order</option>
-                            </select>
-                        </div>
+
                     </div>
-                    
+                    <!-- END Active filters  -->
+
+                    <!-- Products -->
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
                         <!-- Item -->
-                        <div class="col pb-2 pb-sm-3">
-                            <div class="card-hover position-relative bg-secondary rounded-1 p-3 mb-4">
+                        <div class="product  pb-2 pb-sm-3">
+                            <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
                                 <span
                                     class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
                                 <button
@@ -308,23 +207,96 @@
                             </div>
                             <div class="d-flex mb-1">
                                 <h3 class="h6 mb-0">
-                                    <a href="shop-single.html">Loft style lamp</a>
+                                    <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style lamp</a>
                                 </h3>
 
                             </div>
-                            <div class="d-flex align-items-center">
-                                <span class="me-2">$21.00</span>
-                                <del class="fs-sm text-body-secondary">$35.00</del>
-                                <div class="nav ms-auto" >
-                                    <a class="nav-link fs-lg py-2 px-1" href="#" aria-label="Add to Cart">
-                                        <i class="bi bi-cart"></i>
-                                    </a>
+                            <div class="d-flex align-items-center mt-3">
+                                <span class="price ">210.00</span>
+                                <div class="nav ms-auto">
+                                    <button type="button" class="btn btn-light btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                            </path>
+                                        </svg>
+                                        Button
+                                    </button>
                                 </div>
                             </div>
                         </div>
-
+                        <!-- END Item -->
+                        <!-- Item -->
+                        <div class="product  pb-2 pb-sm-3">
+                            <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
+                                <span class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                                <button
+                                    class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                                    type="button" aria-label="Add to Favorites">
+                                    <i class="ai-heart fs-xl text-nav"></i>
+                                </button>
+                                <img class="d-block mx-auto" src="/img/products/01.png" width="226" alt="Product">
+                            </div>
+                            <div class="d-flex mb-1">
+                                <h3 class="h6 mb-0">
+                                    <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style lamp</a>
+                                </h3>
+                        
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <span class="price ">210.00</span>
+                                <div class="nav ms-auto">
+                                    <button type="button" class="btn btn-light btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                            </path>
+                                        </svg>
+                                        Button
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Item -->
+                        <!-- Item -->
+                        <div class="product  pb-2 pb-sm-3">
+                            <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
+                                <span class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                                <button
+                                    class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                                    type="button" aria-label="Add to Favorites">
+                                    <i class="ai-heart fs-xl text-nav"></i>
+                                </button>
+                                <img class="d-block mx-auto" src="/img/products/01.png" width="226" alt="Product">
+                            </div>
+                            <div class="d-flex mb-1">
+                                <h3 class="h6 mb-0">
+                                    <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style lamp</a>
+                                </h3>
+                        
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <span class="price ">210.00</span>
+                                <div class="nav ms-auto">
+                                    <button type="button" class="btn btn-light btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                            </path>
+                                        </svg>
+                                        Button
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Item -->
 
                     </div>
+                    <!-- END Products -->
+
 
                     <!-- Pagination -->
                     <div class="row gy-3 align-items-center pt-3 pt-sm-4 mt-md-2">
@@ -332,7 +304,7 @@
 
                         </div>
                         <div class="col col-md-4 col-12 order-md-2 order-3 text-center">
-                            
+
                         </div>
                         <div class="col col-md-4 col-6 order-md-3 order-2">
                             <nav aria-label="Page navigation">
@@ -356,6 +328,9 @@
                             </nav>
                         </div>
                     </div>
+                    <!-- END Pagination -->
+
+
                 </div>
             </div>
         </main>

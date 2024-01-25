@@ -7,7 +7,7 @@
     fill: currentcolor;
 }
 :root {
-    --bs-body-font-size: $fontsize;
+    --bs-body-font-size: 16px;
 }
 body {
     main {
@@ -20,5 +20,13 @@ body {
         padding: 0.55rem 0.85rem;
         font-size: 0.875rem;
         border-radius: 0.175rem;
+    }
+}
+.filter_color_label {
+    border-radius: 100% !important;
+    span {
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
     }
 }
