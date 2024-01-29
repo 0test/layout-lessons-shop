@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark" class="h-100">
+
+<head>
+    {{> headtags}}
+    <title>контактная страница</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <main class="d-flex flex-column h-100 justify-content-between">
+        {{> header }}
+        <div class=" container flex-fill px-4 py-5">
+            {{> bread }}
+            <section class="row">
+                <div class="col-12">
+                    <h1>Контакты</h1>
+
+
+                </div>
+
+                <div class="border-top pb-sm-3 pt-4">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pt-2">
+
+                        <!-- Address -->
+                        <div class="col pb-2">
+                            <h4 class="mb-lg-4">Address</h4>
+                            <p class="fs-lg fw-medium pb-3 mb-3">514 Magnolia St. Orlando, FL 32806</p>
+                            <a class="btn btn-primary" href="#">
+                                <i class="ai-map-pin me-1"></i>
+                                Get directions
+                            </a>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="col pb-2">
+                            <h4 class="mb-lg-4">Phone</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="pb-1 mb-2">
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Main office</span>
+                                    <a class="nav-link fs-lg p-0"
+                                        href="tel:+178632256033">+1&nbsp;(786)&nbsp;322&nbsp;560&nbsp;33</a>
+                                </li>
+                                <li class="pb-1 mb-2">
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Reception room</span>
+                                    <a class="nav-link fs-lg p-0"
+                                        href="tel:+178630056044">+1&nbsp;(786)&nbsp;300&nbsp;560&nbsp;44</a>
+                                </li>
+                                <li>
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Franchise</span>
+                                    <a class="nav-link fs-lg p-0"
+                                        href="tel:+178630050055">+1&nbsp;(786)&nbsp;300&nbsp;500&nbsp;55</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Schedule -->
+                        <div class="col pb-2">
+                            <h4 class="mb-lg-4">Schedule</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="pb-1 mb-2">
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Mon - Thu</span>
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-nav fs-lg fw-medium">10:00</span>
+                                        <span class="border-top mx-4" style="width: 36px; height: 1px;"></span>
+                                        <span class="text-nav fs-lg fw-medium">22:00</span>
+                                    </div>
+                                </li>
+                                <li class="pb-1 mb-2">
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Fri - Sat</span>
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-nav fs-lg fw-medium">10:00</span>
+                                        <span class="border-top mx-4" style="width: 36px; height: 1px;"></span>
+                                        <span class="text-nav fs-lg fw-medium">20:00</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Sun</span>
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-nav fs-lg fw-medium">12:00</span>
+                                        <span class="border-top mx-4" style="width: 36px; height: 1px;"></span>
+                                        <span class="text-nav fs-lg fw-medium">16:00</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col pb-2">
+                            <h4 class="mb-lg-4">Email</h4>
+                            <a class="nav-link fs-lg p-0" href="mailto:email@example.com">email@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+    <section class="position-relative">
+        <div class="d-none d-xl-block" style="height: 400px;"></div>
+        <div class="d-none d-lg-block d-xl-none" style="height: 400px;"></div>
+        <div class="d-none d-md-block d-lg-none" style="height: 400px;"></div>
+        <div class="d-md-none" style="height:400px;"></div>
+        <div class="interactive-map position-absolute top-0 start-0 w-100 h-100">
+
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A65946ea648b913e9a26631d832814832839608dfd97f0d84960c17b4dbf88085&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </section>
+    {{>modals}}
+    {{>footer}}
+    {{>footer_scripts}}
+</body>
+
+</html>

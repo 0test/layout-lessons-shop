@@ -10,10 +10,7 @@ export default {
 		
 		rollupOptions: {
 			input: {
-				index: path.resolve(__dirname, 'src/index.html'),
-				profile: path.resolve(__dirname, 'src/text.html'),
-                catalog: path.resolve(__dirname, 'src/catalog.html'),
-                product: path.resolve(__dirname, 'src/product.html'),
+				index: path.resolve(__dirname, 'src/*.html'),
 			},
 			output: {
 				assetFileNames: (assetInfo) => {

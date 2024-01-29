@@ -11,7 +11,7 @@
         {{> header }}
 
         <!-- Page container -->
-        <main class="container flex-fill px-4 py-4">
+        <div class="container flex-fill px-4 py-4">
 
             {{> bread }}
 
@@ -29,7 +29,8 @@
                     <div class="offcanvas-lg   offcanvas-start" id="shopSidebar">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="shopSidebar">Фильтрация</h5>
-                            <button type="button" class="btn-close" data-bs-target="#shopSidebar" data-bs-dismiss="offcanvas"></button>
+                            <button type="button" class="btn-close" data-bs-target="#shopSidebar"
+                                data-bs-dismiss="offcanvas"></button>
                         </div>
                         <div class=" offcanvas-body flex-column">
                             <!-- checkboxes -->
@@ -139,7 +140,8 @@
                     <!-- Mobile: show filters  -->
                     <div class="align-items-baseline mb-2">
                         <div class="nav d-md-none">
-                            <button class="btn btn-icon fs-sm p-0 "  data-bs-toggle="offcanvas" data-bs-target="#shopSidebar" aria-expanded="true">
+                            <button class="btn btn-icon fs-sm p-0 " data-bs-toggle="offcanvas"
+                                data-bs-target="#shopSidebar" aria-expanded="true">
                                 <span class="navbar-toggler-icon"></span> Фильтры
                             </button>
                         </div>
@@ -295,12 +297,12 @@
                 </div>
             </div>
             <!-- END Page content -->
-        </main>
+        </div>
+    </main>
 
-
-        {{>modals}}
-        {{>footer}}
-        {{>footer_scripts}}
+    {{>modals}}
+    {{>footer}}
+    {{>footer_scripts}}
 </body>
 
 </html>
