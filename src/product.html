@@ -42,10 +42,8 @@
                             <div class="h3 mb-0 me-3">$14.00</div>
                         </div>
 
-                        <!-- Color button selector -->
-                        <div class="h6">
-                            Color
-                        </div>
+                        <!-- Color  selector -->
+                        <div class="h6">Color</div>
                         <div class="d-flex pb-3">
                             <div class="me-2 mb-2">
                                 <input class="btn-check" type="radio" name="color" data-binded-label="colorOption"
@@ -89,7 +87,7 @@
                             </div>
                         </div>
 
-                        <!-- Weight button selector -->
+                        <!-- Weight  selector -->
                         <div class="h6">Weight</div>
                         <div class="d-flex">
                             <div class="me-3">
@@ -112,19 +110,20 @@
                                 </label>
                             </div>
                         </div>
-                        <div class=" d-flex flex-nowrap  py-4">
 
-                            <div class="input-group flex-nowrap">
-                                <input type="button" value=" - " class=" btn btn-primary btn-sm " data-field="quantity">
-                                <input type="number" step="1" max="10" value="1" name="count"
-                                    class="flex-shrink-0 form-control form-control-sm form-input text-center w-50 ">
+                        <div class=" d-flex flex-nowrap justify-content-between align-items-center  py-4">
+
+                            <div class="d-flex flex-grow-1 flex-nowrap py-4 quantity">
+                                <input type="button" value=" - " class=" btn btn-primary btn-sm " >
+                                <input type="text"  value="1" name="count"
+                                    class="form-control form-control-sm form-input text-center ">
                                 <input type="button" value=" + " class=" btn btn-primary  btn-sm "
-                                    data-field="quantity">
+                                    >
                             </div>
-                            <div class="d-flex ">
+                            <div class="d-flex flex-shrink-0">
                                 <button type="submit" name="addtocart" class="btn btn-primary">Купить</button>
                             </div>
-                            <div class="d-flex ">
+                            <div class="d-flex flex-shrink-0">
                                 <button class="btn fs-3 px-3 text-danger-emphasis">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-heart" viewBox="0 0 16 16">
