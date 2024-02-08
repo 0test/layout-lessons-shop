@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark" class="h-100">
+
+<head>
+    {{> headtags}}
+    <title>Корзина</title>
+</head>
+
+<body class="  min-vh-100">
+    <main class="d-flex flex-column h-100 justify-content-between">
+        {{> header }}
+        <div class=" container flex-fill  py-5">
+            {{> bread }}
+            <section class="row">
+                <div class="col-12">
+                    <h1>Cart</h1>
+
+                    <div class="cart grid" data-commerce-cart="">
+                        <div class="cart_header text-secondary small ">
+                            <div>Товар</div>
+                            <div class="">Количество</div>
+                            <div class="">Цена</div>
+                            <div class="">Стоимость</div>
+                        </div>
+
+                        <div class="cart_body">
+                            <div class="cart_item" data-id="" data-commerce-row="">
+                                <div class="">
+                                    <a href="/cat/gnutevaya-rabochaya-golova">Гнутьевая рабочая голова</a>
+                                    <div class="small text-muted"></div>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex flex-nowrap input-group justify-content-center">
+                                        <button class="btn btn-outline-primary btn-sm" type="button" data-commerce-action="decrease"> -
+                                        </button>
+                                        <input type="text" name="count" class="form-control form-control-sm text-center" value="1"
+                                            data-commerce-action="recount">
+                                        <button class="btn btn-outline-primary btn-sm" type="button" data-commerce-action="increase"> +
+                                        </button>
+                                    </div>
+                                </div>
+                            
+                                <div class="">
+                                    12 965,00 руб.
+                                </div>
+                                <div class="  ">
+                                    12 965,00 руб.
+                                </div>
+                                <div class="">
+                                    <button class="btn btn-danger btn-sm" type="button" data-commerce-action="remove">x</button>
+                                </div>
+                            </div>
+                            <div class="cart_item" data-id="" data-commerce-row="">
+                                <div class="">
+                                    <a href="/cat/gnutevaya-rabochaya-golova">Гнутьевая рабочая голова</a>
+                                    <div class="small text-muted"></div>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex flex-nowrap input-group justify-content-center">
+                                        <button class="btn btn-outline-primary btn-sm" type="button"
+                                            data-commerce-action="decrease"> -
+                                        </button>
+                                        <input type="text" name="count" class="form-control form-control-sm text-center"
+                                            value="1" data-commerce-action="recount">
+                                        <button class="btn btn-outline-primary btn-sm" type="button"
+                                            data-commerce-action="increase"> +
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    12 965,00 руб.
+                                </div>
+                                <div class="  ">
+                                    12 965,00 руб.
+                                </div>
+                                <div class="">
+                                    <button class="btn btn-danger btn-sm" type="button"
+                                        data-commerce-action="remove">x</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart_footer">
+                            <div class="">Итого:</div>
+                            <div class=""></div>
+                            <div class=""></div>
+                            <div class="">37 678,00 руб.</div>
+                            <div class=""></div>
+                        </div>
+
+                        <div class="cart_actions">
+                            <span class="btn btn-secondary" data-commerce-action="clean">Очистить</span>
+                            <a href="/order-page" class="btn btn-primary">Оформить заказ</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+    {{>modals}}
+    {{>footer}}
+    {{>footer_scripts}}
+</body>
+
+</html>
