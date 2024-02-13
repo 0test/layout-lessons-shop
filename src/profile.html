@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark" class="h-100">
+
+<head>
+    {{> headtags}}
+    <title>Текстовая страница</title>
+</head>
+
+<body class=" min-vh-100">
+    <main class="d-flex flex-column h-100 justify-content-between">
+        {{> header }}
+        <div class=" container flex-fill   py-5">
+            {{> bread }}
+            <section class="row">
+                {{>profile_aside}}
+                
+                <div class="offset-1 col-7">
+
+
+                    <div class="container">
+
+                        <h1>Profile</h1>
+
+                        <div class="my-3 alert alert-danger alert-dismissible fade show" role="alert">
+                            <h5 class="alert-heading">Example notice:</h5>
+                            <p>This example text is going to run a bit longer so that you can see how spacing within an
+                                alert works with this kind of content.</p>
+                            <hr>
+                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice
+                                and tidy.</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+
+
+                        <form class="pt-4  " id="profile_form">
+                            <input type="hidden" name="formid" value="profile_form">
+                            <div class="row mt-4">
+                                <div class="col-md-6" data-field-wrapper="password">
+                                    <label for="password" class="form-label">New password</label>
+                                    <input name="password" type="text" class="form-control" id="password">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <div class="col-md-6" data-field-wrapper="password_confirmation">
+                                    <label for="password_confirmation" class="form-label">Confirm</label>
+                                    <input name="password_confirmation" type="text" class="form-control"
+                                        id="password_confirmation">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="form-text mt-2">
+                                    Leave blank if you don't want to change your password
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+
+
+                                <div class="col-12" data-field-wrapper="fullname">
+                                    <label for="fullname" class="form-label">Full name:</label>
+                                    <input name="fullname" type="text" class="form-control" id="fullname"
+                                        placeholder="J. Doe" value="Full name">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-6" data-field-wrapper="email">
+                                    <label for="email" class="form-label">E-mail address:</label>
+                                    <input name="email" type="text" class="form-control " id="email" autocomplete="off"
+                                        value="0test@mail.ru">
+                                    <div class="invalid-feedback"></div>
+
+                                </div>
+                                <div class="col-md-6" data-field-wrapper="mobilephone">
+                                    <label for="mobilephone" class="form-label">Mobile phone number:</label>
+                                    <input name="mobilephone" type="text" class="form-control" id="mobilephone"
+                                        value="11111111111">
+                                    <div class="invalid-feedback"></div>
+
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+
+                                <div class="col-md-6" data-field-wrapper="city">
+                                    <label for="city" class="form-label">City</label>
+                                    <input name="city" type="text" class="form-control" id="city" value="Cccaas">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <div class="col-md-6" data-field-wrapper="zip">
+                                    <label for="zip" class="form-label">Zip</label>
+                                    <input name="zip" type="text" class="form-control" id="zip" value="12352">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div data-messages=""></div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary"><span
+                                            class="spinner-border d-none spinner-border-sm"></span>Save</button>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+    {{>modals}}
+    {{>footer}}
+    {{>footer_scripts}}
+</body>
+
+</html>
