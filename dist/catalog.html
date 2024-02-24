@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark" class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <title>Каталог</title>
+  <script  src="./assets/js/main.2d7c6386.js"></script>
+  <link rel="stylesheet" href="./assets/css/main.d6c7d66a.css">
+</head>
+
+<body class="  min-vh-100">
+    <main class="d-flex flex-column h-100 justify-content-between">
+        <header data-bs-theme="dark" class="pb-5">
+            <div class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container">
+        
+                    <!-- Brand -->
+                    <a class="navbar-brand  flex-lg-grow-0 flex-sm-grow-1 p-0 pe-sm-3" href="index.html">
+                        <span class="text-primary flex-shrink-0 me-2">
+                            <svg class="text-bg-light" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 6L8 12V16H12L18 10M14 6L17 3L21 7L18 10M14 6L18 10M10 4L4 4L4 20L20 20V14"
+                                    stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        МАГАЗИН
+                    </a>
+                    <!-- END Brand -->
+        
+                    <!-- Cart  -->
+                    <button class="btn btn-primary  fs-sm order-lg-3  d-sm-inline-flex  position-relative"
+                        href="cart.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                        aria-controls="offcanvasCart">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">5</span>
+        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 d-lg-none d-block d-sm-none"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                        </svg>
+                        <span class="d-lg-block d-none d-sm-block">Корзина</span>
+                    </button>
+                    <!-- END Cart  -->
+        
+                    <!-- Hamburger -->
+                    <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <!-- ENDHamburger -->
+        
+                    <!-- Nav -->
+                    <nav class="collapse navbar-collapse" id="mainNavbar">
+                        <!-- Mainmenu -->
+                        <ul class="navbar-nav navbar-nav-scroll me-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="catalog.html" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Каталог товаров</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="catalog.html">Форма</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Кепки</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Футболки</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Майки</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Шорты</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Обувь</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Мерч</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="text.html">Доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                        <!-- END Mainmenu -->
+        
+        
+        
+        
+                        <!-- user not logged -->
+                        <!-- 
+                        <ul class="navbar-nav navbar-nav-scroll me-3">
+                            <li class="nav-item position-relative">
+                                <a href="#" class="align-items-center dropdown-toggle justify-content-end text-decoration-none"
+                                    aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    Вход
+                                </a>
+                                <ul class="dropdown-menu shadow text-lg-end text-small">
+                                    <li><a href="#" class="dropdown-item" data-bs-toggle="offcanvas" data-bs-target="#login_canvas"
+                                        aria-controls="login_canvas">
+                                        Login
+                                    </a></li>
+                                    <li><a href="#" class="dropdown-item" data-bs-toggle="offcanvas"
+                                        data-bs-target="#register_canvas" aria-controls="register_canvas">
+                                        Register
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        -->
+                        <!-- END user not logged -->
+        
+        
+                        <!-- user is Logged -->
+                        <ul class="navbar-nav navbar-nav-scroll me-3">
+                            <li class="nav-item position-relative">
+                                <a href="/profile/"
+                                    class="align-items-center dropdown-toggle justify-content-end text-decoration-none"
+                                    aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    0test@mail.ru
+                                </a>
+                                <ul class="dropdown-menu shadow text-lg-end text-small">
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li><a class="dropdown-item" href="orders.html">Orders</a></li>
+        
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="?logout">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- END user is Logged -->
+                    </nav>
+                    <!-- END Nav -->
+                </div>
+            </div>
+        </header>
+        <!-- Page container -->
+        <div class="container flex-fill   py-4">
+
+            <nav aria-label="breadcrumb" class="">
+                <ul class="breadcrumb breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a itemscope="" itemtype="http://schema.org/Thing" itemprop="item" href="https://example.com/books">
+                            <span itemprop="name">Books</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumb-item">
+                        <a itemscope="" itemtype="http://schema.org/Thing" itemprop="item"
+                            href="https://example.com/books/sciencefiction">
+                            <span itemprop="name">Science Fiction</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+                        class="breadcrumb-item active">
+                        <a itemscope="" itemtype="http://schema.org/Thing" itemprop="item"
+                            href="https://example.com/books/sciencefiction/ancillaryjustice">
+                            <span itemprop="name">Ancillary Justice</span>
+                            </a>
+                        <meta itemprop="position" content="3">
+                    </li>
+                </ul>
+            </nav>
+            <!-- Page title -->
+            <div class="row pt-xl-3 mt-n1 mt-sm-0">
+                <div class="col-lg-9">
+                    <h1 class="pb-2 pb-sm-3">Home decoration</h1>
+                </div>
+            </div>
+            <!-- Page content -->
+            <div class="mt-1 mt-lg-3 pb-2 pb-sm-4 row">
+
+                <!-- Sidebar (offcanvas on sreens < 992px) -->
+                <aside class="col-lg-3">
+                    <div class="offcanvas-lg   offcanvas-start" id="shopSidebar">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="shopSidebar">Фильтрация</h5>
+                            <button type="button" class="btn-close" data-bs-target="#shopSidebar"
+                                data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class=" offcanvas-body flex-column">
+                            <!-- checkboxes -->
+                            <div class="fltr_block pb-4">
+                                <div class="fltr_name mb-2 text-body-secondary title">Checkboxes</div>
+                                <div class="fltr_content content">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="c1">
+                                        <label class="form-check-label d-flex align-items-center" for="c1">
+                                            Default input
+                                            <span class="fltr_count   text-body-secondary ms-auto">48</span>
+
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="c2" checked>
+                                        <label class="form-check-label d-flex align-items-center" for="c2">
+                                            Checked switch checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END checkboxes -->
+
+                            <!-- radio -->
+                            <div class="fltr_block pb-4">
+                                <div class="fltr_name mb-2 text-body-secondary title">Radio</div>
+                                <div class="fltr_content content">
+                                    <div class="form-check ">
+                                        <input name="r1" class="form-check-input" type="radio" role="switch" id="r1-1"
+                                            checked>
+                                        <label class="form-check-label d-flex align-items-center" for="r1-1">
+                                            Default radio input
+                                            <span class="fltr_count   text-body-secondary ms-auto">48</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input name="r1" class="form-check-input" type="radio" role="switch" id="r1-2">
+                                        <label class="form-check-label d-flex align-items-center" for="r1-2">Checked
+                                            radio</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END radio -->
+
+                            <!-- pattern -->
+                            <div class="fltr_block pb-4">
+                                <div class="fltr_name mb-2 text-body-secondary title">Color</div>
+                                <div class="fltr_content content">
+
+                                    <div class="form-check ">
+                                        <input name="r2" class="form-check-input" type="radio" role="switch" id="r2"
+                                            checked>
+                                        <label class="form-check-label d-flex align-items-center" for="r2">
+                                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wgARCAAwADADAREAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABgcEBQgDAf/EABcBAQEBAQAAAAAAAAAAAAAAAAEAAgP/2gAMAwEAAhADEAAAAN5bivOjPGpAJXtgLp9gXY37QprIpS6nQBEGdc0FHISyznRuNSpkpHpXssLOlhshnDW0td4V86QKxGaPAlVvKrn/xAAwEAABBAEDAgQFAgcAAAAAAAABAgMEEQUABiESEwciQVExMmFxgQgUM0JygpGhwf/aAAgBAQABPwDw58UN0bAi+Ig2nt912cM6vIKXJhrbikqbDK22jSS4sdju0mworKQoG6/TvLelbcjbn3LgI7E6ZiGMrljj33HQZTjZVJT0kAE9SBXqLPAs2PEjJZxe3l4CHbGTjLlsvvkpR21JPbJsBQV0qvpIHNe2tx7llbQ25A78R/ISxBQ0202sKckOhIFA2BZ5UVEgAAk63rtabt7Bt9icoZR2eH5r6HVKQnreLq2038qOaAGtmbZfmbxmbxdlOrRlYERmO28P4SS4vuEE2R1BSRXoEDUjaEKXtGQiSUhLq3ZLyingEqUu/wAHnW29v43aeOilkIQ0iM8JCjx0t/NZ+1V+dYTAQI0eFIihAYabUY3QCAGjwmvby1enJkjcu5pO5ZDIQ1FUqNjU3YSn+dwfVXH4A+uvExuNlojsZtwJU3IbKyBZFEKBrWzM+E7kbwKWOlqI+lpBqhVJUAPcXY1tJ+dlNqRkZVptp6SglbKLIBKjx9aFC/XWefYkIRhWkJUlxHZdUSOEKSrqH1sCq1msmw3Fj4xgFvpHCUI+UAfDjUiK1h8ScTj2ShZAVbYFJSDX/CdZpK4SH1SneoqWLJ9/fWBlA7sS+yg+acoFX9PlGtvuNMOd111VJCg2RZKQPQDUxBezeNdElSCjI2QLpy2nE19vNf3GslE60Ou94grVwFWKN166yDPab6EtBRUgBRv0A14lSHo8aaGmvKhHUFA/E+bW1e87IYfeCQoSVJ+bg08ofnW2mAmMi+CSbH31ksZIfTGkw1kFiSHFhJoEUoc+/wAdSMf+7Ace44rgfC9ZHHrTakk2lNHW/W2AzNL9dHUEedPHPGo7LbMuIW0gAyBx/eSdYBHVFSQeKH4Op+cGIXDT2lLD0gNWOa8qjZ/xqXlW+lKRxZFDWScuApaTyR6K14iUrFSgV0kpsmgfzrCLTKnRUFs0mXV39Qef9ca//8QAHBEAAgIDAQEAAAAAAAAAAAAAAAECERAhMRIg/9oACAECAQE/AHH1VklWkeeiVukRNKNITocrFwWoidZX1EXPvos0U8LmP//EAB0RAAIBBQEBAAAAAAAAAAAAAAERAAIQICExElH/2gAIAQMBAT8ApPlwfYCo9bhZjLMUpCGCCtwTgwFwrjHglOJ5P//Z" class="bi me-1 rounded-circle">
+                                            Default radio input
+                                            <span class="fltr_count   text-body-secondary ms-auto">48</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input name="r2" class="form-check-input" type="radio" role="switch" id="r2-2"
+                                            checked>
+                                        <label class="form-check-label d-flex align-items-center" for="r2-2">
+                                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wgARCAAwADADAREAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABwYEBQj/xAAZAQEBAQEBAQAAAAAAAAAAAAAFBAMGAgf/2gAMAwEAAhADEAAAAPT/AMu783BXlcK23pOcjSUMnnS/WPMw1p/Gpq6Lnps+uVkrU2yzshOSkuXHQeZJvITWLLJA5zzvBz3Zeg5/LjqdHpNLYZQA1HzXMD3P5MtJSO1baGPikj85VbeBxzacvCj/xAAvEAACAQIFAwMCBQUAAAAAAAABAgMEEQAFBhIhEzFRIkGxgaEHFBVhkTNCUoLB/9oACAEBAAE/ANSwKMjPquDSl9xHHucZxWTtK2Wsx2F4Vup7+l/Av2GNDUdNkOuZoI9+zc8oR+ykut7fXGTwiaijqTFuEcha3uLr3xmaVAz4inpWCKQomNyCC3OMnzFmoUpwCzR1phcjsAN4+FGNXqYtNB534OWuEIPeyEXxmmVwssmaseYqxCAwPqG1rg4NYY9QvBRxBpXk2My97lgT724GMhzGFKRaTexkYoLEdrgcffGdloagxKO0hQfz3xQ9alrfy0CC5zhupx7bJiMauW2nYEUBljonVF8jawPwP5xXz0sGl6mpqJAAJVcMwI7n97ebYyOt/MfiLl/XYIkkws3s91Y/8xGZJc1jMMkS7ZIrgqTdQR98awnMVVLVyCyxyk+AfGKOaKbU8ciXdlrlt25HQlHzfGdOf0WjgqFtupCHa3c7AT9zjVc8z5PT5WJVPXmINvC+q/tjJq6Os1RSVcRAajiCMpN9wQMv2viimjWjiq5BZy5B/wBWIHxjVFLHVw13WIK2tYnve+Mipaik1VT0jzk7ZASdwBNhMv14P2xnzhsto9pukgLBvANj8HGYZRUBcyip3tL0neFv8GZCARYm3OKqCoy3P4KWmIMjzKE78AysTf6MPbGX10tfpiiro0BZoj1to/u5xm9XLNE8S+pt8Q5HPfnApVg1FRVXQ2SvOzPHJwVUsSPryfONRdFtOUlTG4uka3RH/p+kHGabTFXbDZRSJZmB7bn84kqqeu1dS1MiFBHumJ8C3AP7gj2x+Hs0M2moUT1Aq3B7WG4fGKUIlZaU8pKvva+M4SCoz0wSVB3xuJb7ubFyQODj/8QAJhEAAQQBAwMEAwAAAAAAAAAAAQACAxEhBBIjEzJRIjNhcYHB0f/aAAgBAgEBPwCQDpH6U7zuLfpabEuVFmMFPHIaC3WxTWIfwpWWS/5UXeVE4BgCkG04WRj5/ql9nHhOIELrWmPOFZ3ilqDTySgQ42ieJoPj9Kd2KUTqcEw0wFTt3Wo7anH0BPYQTayHUm2+FpUmSiKcnV0gVKMOKHfa0x4wgakUmXlf/8QAJhEAAgIBAwMDBQAAAAAAAAAAAAECAxEEEiEiI3ETMWEzQlGBwf/aAAgBAwEBPwCltWYRTBbVIue/TlnE2irmBtKUnb+yqSS2/A49vksjmbZSunI0ms/BVxa/JBOViwWLGlkPGxmnXRgaxW/H9IfUl5NOlGTkTj2ZL8korLRQ9rRY1sbILrkQsisC5qbJpRsaKo45Mp1sq5taIe6RjFDRcn6jPsK8qo//2Q==" class="bi me-1 rounded-circle">
+                                            Default radio input
+                                            <span class="fltr_count   text-body-secondary ms-auto">48</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <!-- pattern -->
+
+                            <!-- select -->
+                            <div class=" fltr_block pb-2">
+                                <div class="fltr_name mb-2 text-body-secondary title">Color</div>
+                                <div class="fltr_content content">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- END select -->
+
+                            <!-- reset -->
+                            <div class=" fltr_block pb-2">
+                                <div class="fltr_content content">
+                                    <button type="button" class=" btn btn-icon btn-sm text-danger-emphasis">
+                                        <span class="me-1">Сбросить фильтры</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- END reset -->
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product grid -->
+                <div class="col-lg-8 offset-lg-1">
+                    <!-- Mobile: show filters  -->
+                    <div class="align-items-baseline mb-2">
+                        <div class="nav d-md-none">
+                            <button class="btn btn-icon fs-sm p-0 " data-bs-toggle="offcanvas"
+                                data-bs-target="#shopSidebar" aria-expanded="true">
+                                <span class="navbar-toggler-icon"></span> Фильтры
+                            </button>
+                        </div>
+                    </div>
+                    <!-- END Mobile: show filters  -->
+
+                    <!-- Products -->
+                    <div class="row row-cols-1  row-cols-sm-2 row-cols-md-2 g-4">
+                        <!-- Items -->
+                        <div class="product  pb-2 pb-sm-3">
+                            <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
+                                <span class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                                <button
+                                    class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                                    type="button" aria-label="Add to Favorites">
+                                    <i class="ai-heart fs-xl text-nav"></i>
+                                </button>
+                                <img class="d-block mx-auto" src="./assets/img/01.319e7997.png" width="226" alt="Product">
+                            </div>
+                            <div class="d-flex mb-1">
+                                <h3 class="h6 mb-0">
+                                    <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style
+                                        lamp</a>
+                                </h3>
+                        
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <span class="price ">210.00</span>
+                                <div class="nav ms-auto">
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                            </path>
+                                        </svg>
+                                        Button
+                                    </button>
+                                </div>
+                            </div>
+                        </div>                        <div class="product  pb-2 pb-sm-3">
+                            <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
+                                <span class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                                <button
+                                    class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                                    type="button" aria-label="Add to Favorites">
+                                    <i class="ai-heart fs-xl text-nav"></i>
+                                </button>
+                                <img class="d-block mx-auto" src="./assets/img/01.319e7997.png" width="226" alt="Product">
+                            </div>
+                            <div class="d-flex mb-1">
+                                <h3 class="h6 mb-0">
+                                    <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style
+                                        lamp</a>
+                                </h3>
+                        
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <span class="price ">210.00</span>
+                                <div class="nav ms-auto">
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                            </path>
+                                        </svg>
+                                        Button
+                                    </button>
+                                </div>
+                            </div>
+                        </div>                        <div class="product  pb-2 pb-sm-3">
+                            <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
+                                <span class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                                <button
+                                    class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                                    type="button" aria-label="Add to Favorites">
+                                    <i class="ai-heart fs-xl text-nav"></i>
+                                </button>
+                                <img class="d-block mx-auto" src="./assets/img/01.319e7997.png" width="226" alt="Product">
+                            </div>
+                            <div class="d-flex mb-1">
+                                <h3 class="h6 mb-0">
+                                    <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style
+                                        lamp</a>
+                                </h3>
+                        
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <span class="price ">210.00</span>
+                                <div class="nav ms-auto">
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                            </path>
+                                        </svg>
+                                        Button
+                                    </button>
+                                </div>
+                            </div>
+                        </div>                        <div class="product  pb-2 pb-sm-3">
+                            <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
+                                <span class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                                <button
+                                    class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                                    type="button" aria-label="Add to Favorites">
+                                    <i class="ai-heart fs-xl text-nav"></i>
+                                </button>
+                                <img class="d-block mx-auto" src="./assets/img/01.319e7997.png" width="226" alt="Product">
+                            </div>
+                            <div class="d-flex mb-1">
+                                <h3 class="h6 mb-0">
+                                    <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style
+                                        lamp</a>
+                                </h3>
+                        
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <span class="price ">210.00</span>
+                                <div class="nav ms-auto">
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                            </path>
+                                        </svg>
+                                        Button
+                                    </button>
+                                </div>
+                            </div>
+                        </div>                        <!-- END Itesm -->
+                    </div>
+                    <!-- END Products -->
+                    <!-- Pagination -->
+                    <div class="row gy-3 align-items-center pt-3 pt-sm-4 mt-md-2">
+                        <div class="col col-md-4 col-6 order-md-1 order-1">
+
+                        </div>
+                        <div class="col col-md-4 col-12 order-md-2 order-3 text-center">
+
+                        </div>
+                        <div class="col col-md-4 col-6 order-md-3 order-2">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination pagination-sm justify-content-end">
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1<span class="visually-hidden">(current)</span></span>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- END Pagination -->
+                </div>
+            </div>
+            <!-- END Page content -->
+        </div>
+    </main>
+
+    <!-- Cart -->
+    <section class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCart">
+        <div data-commerce-cart="" class="offcanvas-body">
+            <div class="offcanvas-header p-0">
+                <div class="d-flex flex-grow-1 justify-content-between">
+    
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Корзина</h5>
+                    <a href="cart.html" class="btn btn-primary btn-sm">К заказу</a>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+            </div>
+            <div class="mt-3">
+                <div class="alert alert-success fs-6">
+                    Товары: <strong><span id="totalitems">4</span> шт.</strong> на 40 101,00 руб.
+                </div>
+                <ol class="list-group">
+                    <li data-id="5" data-commerce-row="b1d68bd1fb6921f7" class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="me-auto">
+                                <div class="fw-bold">Основной корпус машины</div>
+                                5 462,00 руб.
+                            </div>
+                            <span class="badge bg-primary rounded-pill">
+                                1
+                                <input type="hidden" name="count" class="form-control" value="1"
+                                    data-commerce-action="recount">
+                            </span>
+                        </div>
+    
+                        <div class="small text-muted mb-2">
+                            <span class="badge bg-black rounded-pill" color="">Белый</span> <span
+                                class="badge bg-black rounded-pill" stat="">Выбран чекбокс</span>
+                        </div>
+                        <div class="align-items-center d-flex mb-2 mt-3">
+                            <div class="input-group flex-nowrap">
+                                <input data-commerce-action="decrease" type="button" value=" - "
+                                    class=" btn btn-outline-primary btn-sm " data-field="quantity">
+                                <input data-commerce-action="increase" type="button" value=" + "
+                                    class=" btn btn-outline-primary  btn-sm " data-field="quantity">
+                            </div>
+                            <button class="btn btn-close btn-sm " type="button" data-commerce-action="remove"> </button>
+                        </div>
+                    </li>
+                    <li data-id="6" data-commerce-row="" class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="me-auto">
+                                <div class="fw-bold">Гнутьевая рабочая голова</div>
+                                12 965,00 руб.
+                            </div>
+                            <span class="badge bg-primary rounded-pill">
+                                1
+                                <input type="hidden" name="count" class="form-control" value="1"
+                                    data-commerce-action="recount">
+                            </span>
+                        </div>
+    
+                        <div class="small text-muted mb-2">
+    
+                        </div>
+                        <div class="align-items-center d-flex mb-2 mt-3">
+                            <div class="input-group flex-nowrap">
+                                <input data-commerce-action="decrease" type="button" value=" - "
+                                    class=" btn btn-outline-primary btn-sm " data-field="quantity">
+                                <input data-commerce-action="increase" type="button" value=" + "
+                                    class=" btn btn-outline-primary  btn-sm " data-field="quantity">
+                            </div>
+                            <button class="btn btn-close btn-sm " type="button" data-commerce-action="remove"> </button>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- END Cart -->
+    
+    
+    <!-- login -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="login_canvas" aria-labelledby="login_canvasLabel">
+    	<div class="offcanvas-header">
+    		<h5 class="offcanvas-title" id="login_canvasLabel">Login</h5>
+    		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    	</div>
+    	<div class="offcanvas-body">
+    		<div id="login_form_wrapper">
+    			<form method="POST" class="needs-validation " id="login_form">
+    				<input type="hidden" name="formid" value="login_form">
+    
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="email">
+    					<input type="text" name="email" class="form-control" id="login_email" placeholder="name@example.com"
+    						value="">
+    					<label for="login_email">Email</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="password">
+    					<input type="password" name="password" class="form-control" id="login_password"
+    						placeholder="Password">
+    					<label for="login_password">Password</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="mb-3 text-danger" data-messages></div>
+    				<div class="form-floating form-group mb-3">
+    
+    					<button class="w-100 btn btn-lg btn-primary" type="submit">
+    						<span class="spinner-border d-none spinner-border-sm"></span>Submit
+    					</button>
+    				</div>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="register_canvas" aria-labelledby="register_canvasLabel">
+    	<div class="offcanvas-header">
+    		<h5 class="offcanvas-title" id="register_canvasLabel">Register</h5>
+    		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    	</div>
+    	<div class="offcanvas-body">
+    		<div id="register_form_wrapper">
+    			<form method="POST" class="needs-validation " id="register_form">
+    				<input type="hidden" name="formid" value="register_form">
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="email">
+    					<input type="text" name="email" class="form-control" id="register_email"
+    						placeholder="name@example.com" value="">
+    					<label for="register_email">Email</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="password">
+    					<input type="password" name="password" class="form-control" id="register_password"
+    						placeholder="Password">
+    					<label for="register_password">Password</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="mb-3 text-danger" data-messages></div>
+    
+    				<div class="form-floating form-group mb-3">
+    					<div class="invalid-feedback"></div>
+    					<button class="w-100 btn btn-lg btn-primary" type="submit"><span
+    							class="spinner-border d-none spinner-border-sm"></span>Submit</button>
+    				</div>
+    			</form>
+    		</div>
+    
+    	</div>
+    </div>
+    <!-- END login -->
+    
+    <!-- ex modal -->
+    <div class="modal fade" id="FirstModal" tabindex="-1" aria-labelledby="FirstModalLabel" aria-hidden="true">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h1 class="modal-title fs-5" id="FirstModalLabel">Modal title</h1>
+    				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    			</div>
+    			<div class="modal-body"> ... </div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    				<button type="button" class="btn btn-primary">Savechanges</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- END ex modal -->    <footer class="bd-footer bg-black footer mt-auto py-3 bg-body-tertiary">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="align-items-center d-flex mb-2 mb-4 text-body-emphasis text-decoration-none" href="/">
+                        <span class="me-2">
+                            <svg class="text-bg-light " width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 6L8 12V16H12L18 10M14 6L17 3L21 7L18 10M14 6L18 10M10 4L4 4L4 20L20 20V14"
+                                    stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+    
+                        </span>
+                        МАГАЗИН
+                    </a>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">Задизайнено на голом бутстрапе в рамках уроков по Evolution CMS</li>
+                        <li class="mb-2">Можно распространять, продавать, сдавать в аренду ну или чего вы там ещё придумаете
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Товары</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">Форма</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/">Кепки</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/examples/">Футболки</a></li>
+                        <li class="mb-2"><a href="https://icons.getbootstrap.com/">Майки</a></li>
+                        <li class="mb-2"><a href="https://themes.getbootstrap.com/">Шорты</a></li>
+                        <li class="mb-2"><a href="https://blog.getbootstrap.com/">Обувь</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>О нас</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/">Про магазин</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Доставка</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Оплата</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Возврат</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Гарантии</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>О компании</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap" target="_blank"
+                                rel="noopener">Адреса и телефоны</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev" target="_blank"
+                                rel="noopener">Вакансии</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/icons" target="_blank" rel="noopener">Icons</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Наши соцсети</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues" target="_blank"
+                                rel="noopener">ВК</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions" target="_blank"
+                                rel="noopener">ТГ</a></li>
+                        <li class="mb-2"><a href="https://github.com/sponsors/twbs" target="_blank" rel="noopener">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    </body>
+
+</html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark" class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <title>Товар</title>
+  <script  src="./assets/js/main.2d7c6386.js"></script>
+  <link rel="stylesheet" href="./assets/css/main.d6c7d66a.css">
+</head>
+
+<body class="  min-vh-100">
+    <main class="d-flex flex-column h-100 justify-content-between">
+        <header data-bs-theme="dark" class="pb-5">
+            <div class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container">
+        
+                    <!-- Brand -->
+                    <a class="navbar-brand  flex-lg-grow-0 flex-sm-grow-1 p-0 pe-sm-3" href="index.html">
+                        <span class="text-primary flex-shrink-0 me-2">
+                            <svg class="text-bg-light" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 6L8 12V16H12L18 10M14 6L17 3L21 7L18 10M14 6L18 10M10 4L4 4L4 20L20 20V14"
+                                    stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        МАГАЗИН
+                    </a>
+                    <!-- END Brand -->
+        
+                    <!-- Cart  -->
+                    <button class="btn btn-primary  fs-sm order-lg-3  d-sm-inline-flex  position-relative"
+                        href="cart.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                        aria-controls="offcanvasCart">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">5</span>
+        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 d-lg-none d-block d-sm-none"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                        </svg>
+                        <span class="d-lg-block d-none d-sm-block">Корзина</span>
+                    </button>
+                    <!-- END Cart  -->
+        
+                    <!-- Hamburger -->
+                    <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <!-- ENDHamburger -->
+        
+                    <!-- Nav -->
+                    <nav class="collapse navbar-collapse" id="mainNavbar">
+                        <!-- Mainmenu -->
+                        <ul class="navbar-nav navbar-nav-scroll me-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="catalog.html" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Каталог товаров</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="catalog.html">Форма</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Кепки</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Футболки</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Майки</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Шорты</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Обувь</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Мерч</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="text.html">Доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                        <!-- END Mainmenu -->
+        
+        
+        
+        
+                        <!-- user not logged -->
+                        <!-- 
+                        <ul class="navbar-nav navbar-nav-scroll me-3">
+                            <li class="nav-item position-relative">
+                                <a href="#" class="align-items-center dropdown-toggle justify-content-end text-decoration-none"
+                                    aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    Вход
+                                </a>
+                                <ul class="dropdown-menu shadow text-lg-end text-small">
+                                    <li><a href="#" class="dropdown-item" data-bs-toggle="offcanvas" data-bs-target="#login_canvas"
+                                        aria-controls="login_canvas">
+                                        Login
+                                    </a></li>
+                                    <li><a href="#" class="dropdown-item" data-bs-toggle="offcanvas"
+                                        data-bs-target="#register_canvas" aria-controls="register_canvas">
+                                        Register
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        -->
+                        <!-- END user not logged -->
+        
+        
+                        <!-- user is Logged -->
+                        <ul class="navbar-nav navbar-nav-scroll me-3">
+                            <li class="nav-item position-relative">
+                                <a href="/profile/"
+                                    class="align-items-center dropdown-toggle justify-content-end text-decoration-none"
+                                    aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    0test@mail.ru
+                                </a>
+                                <ul class="dropdown-menu shadow text-lg-end text-small">
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li><a class="dropdown-item" href="orders.html">Orders</a></li>
+        
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="?logout">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- END user is Logged -->
+                    </nav>
+                    <!-- END Nav -->
+                </div>
+            </div>
+        </header>        <section class=" container flex-fill   py-5">
+            <nav aria-label="breadcrumb" class="">
+                <ul class="breadcrumb breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a itemscope="" itemtype="http://schema.org/Thing" itemprop="item" href="https://example.com/books">
+                            <span itemprop="name">Books</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumb-item">
+                        <a itemscope="" itemtype="http://schema.org/Thing" itemprop="item"
+                            href="https://example.com/books/sciencefiction">
+                            <span itemprop="name">Science Fiction</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+                        class="breadcrumb-item active">
+                        <a itemscope="" itemtype="http://schema.org/Thing" itemprop="item"
+                            href="https://example.com/books/sciencefiction/ancillaryjustice">
+                            <span itemprop="name">Ancillary Justice</span>
+                            </a>
+                        <meta itemprop="position" content="3">
+                    </li>
+                </ul>
+            </nav>            <div class="d-flex d-md-none align-items-center pb-3 mb-3">
+                <div class="h3 mb-0 me-3">$14.00</div>
+                <span class="badge bg-danger bg-opacity-10 text-danger d-md-none">Sale</span>
+            </div>
+            <div class="row pb-sm-1 pb-md-4">
+                <!-- img -->
+                <div class="col-md-6 gallery mb-3 mb-md-0">
+                    <a class="d-block gallery-item  mb-4" href="/img/products/big01.png">
+                        <div class=" bg-secondary p-4">
+                            <img class="img-fluid" src="./assets/img/big01.e638589c.png">
+                        </div>
+                    </a>
+                </div>
+
+                <!--  details -->
+                <div class="col-md-6 col-xl-5 offset-xl-1">
+                    <div class="d-none d-md-block" style="margin-top: -90px;"></div>
+                    <div class=" ps-md-4 ps-lg-5 ps-xl-0">
+                        <div class="d-none d-md-block" style="padding-top: 90px;"></div>
+                        <div class="d-flex align-items-center pt-3 py-3">
+                            <span
+                                class="badge bg-danger bg-opacity-10 text-danger d-none d-md-inline-block me-4">Sale</span>
+                        </div>
+                        <h1 class=" pb-1 mb-2">Scented candle</h1>
+                        <p>Find aute irure reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiatnulla
+                            pariatur neque congue aliqua dolor do amet sint ovar velit.</p>
+                        <div class="d-none d-md-flex align-items-center pb-3 mb-3">
+                            <div class="h3 mb-0 me-3">$14.00</div>
+                        </div>
+
+                        <!-- Color  selector -->
+                        <div class="h6">Color</div>
+                        <div class="d-flex pb-3">
+                            <div class="me-2 mb-2">
+                                <input class="btn-check" type="radio" name="color" data-binded-label="colorOption"
+                                    value="Gray concrete" checked="" id="color1">
+                                <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color1">
+                                    <span class="d-block bg-size-cover bg-position-center rounded-circle"
+                                        style="width: 1.5rem; height: 1.5rem; background-color: #c0c0c0; background-image: url(../assets/img/shop/pattern/marble.jpg);"></span>
+                                </label>
+                            </div>
+                            <div class="me-2 mb-2">
+                                <input class="btn-check" type="radio" name="color" data-binded-label="colorOption"
+                                    value="Soft beige" id="color2">
+                                <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color2">
+                                    <span class="d-block rounded-circle"
+                                        style="width: 1.5rem; height: 1.5rem; background-color: #d9c9a1;"></span>
+                                </label>
+                            </div>
+                            <div class="me-2 mb-2">
+                                <input class="btn-check" type="radio" name="color" data-binded-label="colorOption"
+                                    value="Bluish sky" id="color3">
+                                <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color3">
+                                    <span class="d-block rounded-circle"
+                                        style="width: 1.5rem; height: 1.5rem; background-color: #a1b7d9;"></span>
+                                </label>
+                            </div>
+                            <div class="me-2 mb-2">
+                                <input class="btn-check" type="radio" name="color" data-binded-label="colorOption"
+                                    value="Green grass" id="color4">
+                                <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color4">
+                                    <span class="d-block rounded-circle"
+                                        style="width: 1.5rem; height: 1.5rem; background-color: #74947d;"></span>
+                                </label>
+                            </div>
+                            <div class="me-2 mb-2">
+                                <input class="btn-check" type="radio" name="color" data-binded-label="colorOption"
+                                    value="Woody brown" id="color5">
+                                <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color5">
+                                    <span class="d-block bg-size-cover bg-position-center rounded-circle"
+                                        style="width: 1.5rem; height: 1.5rem; background-color: #af8352; background-image: url(../assets/img/shop/pattern/wood.jpg);"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Weight  selector -->
+                        <div class="h6">Weight</div>
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <input class="btn-check" type="radio" name="weight" value="140 g" checked=""
+                                    id="weight1">
+                                <label class="btn btn-outline-secondary px-2" for="weight1">
+                                    <span class="mx-1">140 g</span>
+                                </label>
+                            </div>
+                            <div class="me-3">
+                                <input class="btn-check" type="radio" name="weight" value="260 g" id="weight2">
+                                <label class="btn btn-outline-secondary px-2" for="weight2">
+                                    <span class="mx-1">260 g</span>
+                                </label>
+                            </div>
+                            <div class="me-3">
+                                <input class="btn-check" type="radio" name="weight" value="440 g" id="weight3">
+                                <label class="btn btn-outline-secondary px-2" for="weight3">
+                                    <span class="mx-1">440 g</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class=" d-flex flex-nowrap justify-content-between align-items-center  py-4">
+
+                            <div class="d-flex flex-grow-1 flex-nowrap py-4 quantity">
+                                <input type="button" value=" - " class=" btn btn-primary btn-sm ">
+                                <input type="text" value="1" name="count"
+                                    class="form-control form-control-sm form-input text-center ">
+                                <input type="button" value=" + " class=" btn btn-primary  btn-sm ">
+                            </div>
+                            <div class="d-flex flex-shrink-0 mx-2">
+                                <button type="submit" name="addtocart" class="btn btn-primary">Купить</button>
+                            </div>
+                            <div class="d-flex flex-shrink-0">
+                                <button class="btn fs-3 px-3 text-danger-emphasis">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="mb-4 mb-lg-5">Ut sit at orci cursus gravida pretium proin nulla id purus, placerat eget mauris eu ac volutpat
+                                facilisi eget morbi ullamcorper turpis nisi aconsequat cursus malesuada leo ultrices nisl dictumst turpis tortor sem
+                                eu ac volutpat facilisi eget morbi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="border-top container py-5">
+            <div class="row row-cols-1  row-cols-sm-2 row-cols-md-2 row-cols-xl-4 g-4">
+        
+                <!-- Item-->
+                <div class="swiper-slide text-center text-sm-start">
+                    <div class="text-primary mb-3 mb-sm-4">
+                        <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M37.7794 10.6909L20.2794 1.94092C20.1926 1.89757 20.097 1.875 20 1.875C19.903 1.875 19.8074 1.89757 19.7206 1.94092L2.22063 10.6909C2.11674 10.7428 2.02936 10.8227 1.96832 10.9215C1.90727 11.0203 1.87496 11.1341 1.87501 11.2503V28.7503C1.87437 28.867 1.90641 28.9815 1.96749 29.0809C2.02857 29.1803 2.11626 29.2606 2.22063 29.3128L19.7206 38.0628C19.8074 38.1061 19.903 38.1287 20 38.1287C20.097 38.1287 20.1926 38.1061 20.2794 38.0628L37.7794 29.3128C37.8838 29.2606 37.9714 29.1803 38.0325 29.0809C38.0936 28.9815 38.1256 28.867 38.125 28.7503V11.2503C38.1251 11.1341 38.0928 11.0203 38.0317 10.9215C37.9706 10.8227 37.8833 10.7428 37.7794 10.6909ZM20 19.3015L15.1144 16.8584L30.7306 8.56279L36.1056 11.2503L20 19.3015ZM10.1144 14.3584L25.7306 6.06279L29.3556 7.87529L13.7413 16.1722L10.1144 14.3584ZM9.37501 15.3865L13.125 17.2615V22.2415L11.6919 20.8084C11.5747 20.6912 11.4158 20.6253 11.25 20.6253H9.37501V15.3865ZM20 3.19904L24.3575 5.37529L8.74126 13.6722L3.89751 11.2503L20 3.19904ZM3.12501 12.2615L8.12501 14.7615V21.2503C8.12501 21.416 8.19086 21.575 8.30807 21.6922C8.42528 21.8094 8.58425 21.8753 8.75001 21.8753H10.9913L13.3081 24.1922C13.3955 24.2795 13.5069 24.339 13.6281 24.3632C13.7493 24.3873 13.875 24.3749 13.9892 24.3276C14.1034 24.2803 14.201 24.2002 14.2696 24.0974C14.3383 23.9947 14.375 23.8739 14.375 23.7503V17.8865L19.375 20.3865V36.489L3.12501 28.364V12.2615ZM20.625 36.489V20.3865L36.875 12.2615V28.364L20.625 36.489Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3 class="h5 mb-2 mb-sm-3">Fast and free delivery</h3>
+                    <p class="fs-sm mb-0">Free delivery for all orders over $200 honcus egestas lorem honcus egestas</p>
+                </div>
+        
+                <!-- Item -->
+                <div class="swiper-slide text-center text-sm-start">
+                    <div class="text-primary mb-3 mb-sm-4">
+                        <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M38 27.4c-1.5 3.5-4 6.6-7.2 8.7s-6.9 3.3-10.8 3.3c-3.3 0-6.5-.8-9.4-2.4-2.4-1.3-4.4-3.1-6-5.2v3.1c0 .2-.1.3-.2.4a.76.76 0 0 1-.4.2.76.76 0 0 1-.4-.2c-.1-.1-.2-.2-.2-.4V30c0-.2.1-.3.2-.4 0 0 .1 0 .1-.1h0s.1 0 .1-.1h.1 4.8c.2 0 .3.1.4.2a.76.76 0 0 1 .2.4.76.76 0 0 1-.2.4.76.76 0 0 1-.4.2H5.1c2.3 3.3 5.7 5.7 9.6 6.9 4.2 1.3 8.8 1 12.8-.8s7.3-5 9.1-9c1.9-4 2.2-8.5 1-12.8C36.4 10.7 33.7 7 30 4.6s-8.1-3.4-12.5-2.8C13.1 2.5 9.1 4.7 6.2 8s-4.5 7.6-4.5 12c0 .2-.1.3-.2.4a.76.76 0 0 1-.4.2c-.2 0-.3-.1-.4-.2s-.2-.2-.2-.4c0-3.8 1.1-7.6 3.3-10.8S9 3.5 12.6 2C16.1.6 20 .2 23.8 1s7.2 2.6 10 5.3c2.7 2.7 4.6 6.2 5.3 10 .7 3.7.3 7.6-1.1 11.1zm-14.1-3.8c0 1-.4 2-1.1 2.8-.6.5-1.3.9-2 1.1v.7c0 .2-.1.4-.2.5s-.3.2-.5.2-.4-.1-.5-.2-.2-.3-.2-.5v-.7a3.09 3.09 0 0 1-2-1.1c-.7-.7-1.1-1.7-1.1-2.8 0-.2.1-.4.2-.5s.3-.2.5-.2.4.1.5.2.2.3.2.5c0 .7.3 1.3.7 1.8.5.5 1.1.7 1.8.7s1.3-.3 1.8-.7c.5-.5.7-1.1.7-1.8s-.3-1.8-2.7-2.5c-3-.9-3.7-2.6-3.7-3.8 0-1 .4-2 1.1-2.8.6-.6 1.3-.9 2-1.1v-.7c0-.2.1-.4.2-.5s.3-.2.5-.2.4.1.5.2.2.3.2.5v.7a3.09 3.09 0 0 1 2 1.1c.7.7 1.1 1.7 1.1 2.8 0 .2-.1.4-.2.5s-.3.2-.5.2-.4-.1-.5-.2-.2-.3-.2-.5c0-.7-.3-1.3-.7-1.8-.5-.5-1.1-.7-1.8-.7s-1.3.3-1.8.7c-.5.5-.7 1.1-.7 1.8 0 .4 0 1.7 2.7 2.5 2.4.7 3.7 2 3.7 3.8z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3 class="h5 mb-2 mb-sm-3">Money back guarantee</h3>
+                    <p class="fs-sm mb-0">We return money within 30 days honcus egestas lorem honcus egestas</p>
+                </div>
+        
+                <!-- Item -->
+                <div class="swiper-slide text-center text-sm-start">
+                    <div class="text-primary mb-3 mb-sm-4">
+                        <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M33.6825 13.683C33.6825 6.12609 27.5564 0 19.9995 0C12.4426 0 6.31646 6.12609 6.31646 13.683C4.36283 13.9263 2.51562 15.2033 2.51562 18.168V25.3136C2.51562 28.6583 4.85694 29.8746 7.07663 29.8746H9.28111C9.70091 29.8746 10.0413 29.5342 10.0413 29.1144V14.3976C10.0413 13.9778 9.70091 13.6374 9.28111 13.6374H7.83679C7.83679 6.92018 13.2823 1.47472 19.9995 1.47472C26.7167 1.47472 32.1621 6.92018 32.1621 13.6374H30.7178C30.298 13.6374 29.9577 13.9778 29.9577 14.3976V29.0916C29.9577 29.5114 30.298 29.8518 30.7178 29.8518H32.1621C31.9493 35.0741 29.4407 36.298 24.4312 36.5184V36.0091C24.4312 35.1694 23.7506 34.4888 22.9109 34.4888H18.1295C17.2898 34.4888 16.6091 35.1694 16.6091 36.0091V38.4797C16.6091 39.3194 17.2898 40 18.1295 40H22.9261C23.7658 40 24.4464 39.3194 24.4464 38.4797V38.0388C29.2659 37.8183 33.4316 36.8225 33.6825 29.8062C35.6361 29.5629 37.4833 28.2858 37.4833 25.3212V18.1756C37.4833 15.1957 35.6437 13.9263 33.6825 13.683ZM8.52094 15.1045V28.3314H7.03862C5.91357 28.3314 3.99795 27.9361 3.99795 25.2908V18.1452C3.99795 15.5226 5.89077 15.1045 7.03862 15.1045H8.52094ZM22.9261 37.3318V38.4873H18.1295V36.0167H22.9261V37.3318ZM35.963 25.3136C35.963 27.9361 34.0702 28.3542 32.9223 28.3542H31.478V15.1577H32.9603C34.0854 15.1577 36.001 15.553 36.001 18.1984L35.963 25.3136Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3 class="h5 mb-2 mb-sm-3">24/7 customer support</h3>
+                    <p class="fs-sm mb-0">Friendly 24/7 customer support honcus egestas lorem honcus egestas</p>
+                </div>
+        
+                <!-- Item -->
+                <div class="swiper-slide text-center text-sm-start">
+                    <div class="text-primary mb-3 mb-sm-4">
+                        <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M35.1422 8.0989L20.1085 0.0881401C19.8855 -0.0308936 19.6182 -0.0292231 19.3968 0.0923166L4.77905 8.10308C4.53931 8.23464 4.39062 8.48607 4.39062 8.75964V19.2237C4.3994 27.8255 9.49571 35.6074 17.377 39.0535L19.406 39.9377C19.5956 40.0204 19.8115 40.0208 20.0016 39.9385L22.2879 38.9512C30.3153 35.5798 35.5378 27.7228 35.5386 19.0162V8.75964C35.5386 8.48315 35.3862 8.22879 35.1422 8.0989ZM34.0417 19.0162C34.04 27.1226 29.1764 34.4371 21.7019 37.5742L21.6969 37.5767L19.7059 38.4362L17.9759 37.6815C10.6397 34.4738 5.89546 27.2307 5.88711 19.2237V9.20278L19.7614 1.59882L34.0417 9.20821V19.0162Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M14.2398 18.7389C13.9713 18.4244 13.4989 18.3873 13.1844 18.6558C12.8699 18.924 12.8327 19.3967 13.1013 19.7108L17.0549 24.3406C17.3188 24.6497 17.7812 24.6919 18.0961 24.4354L27.3039 16.9442C27.6247 16.6836 27.6731 16.2121 27.4121 15.8913C27.1514 15.571 26.6799 15.5221 26.3591 15.7831L17.7185 22.8124L14.2398 18.7389Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3 class="h5 mb-2 mb-sm-3">Secure online payment</h3>
+                    <p class="fs-sm mb-0">We possess SSL / Secure certificate honcus egestas lorem honcus egestas</p>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 container ">
+            <h2 class="h1 pb-2">You may also like</h2>
+            <div class="row row-cols-1  row-cols-sm-2 row-cols-md-2 row-cols-xl-4 g-4">
+                <!-- Items -->
+                <div class="product  pb-2 pb-sm-3">
+                    <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
+                        <span class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                        <button
+                            class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                            type="button" aria-label="Add to Favorites">
+                            <i class="ai-heart fs-xl text-nav"></i>
+                        </button>
+                        <img class="d-block mx-auto" src="./assets/img/01.319e7997.png" width="226" alt="Product">
+                    </div>
+                    <div class="d-flex mb-1">
+                        <h3 class="h6 mb-0">
+                            <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style
+                                lamp</a>
+                        </h3>
+                
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <span class="price ">210.00</span>
+                        <div class="nav ms-auto">
+                            <button type="button" class="btn btn-primary btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                    </path>
+                                </svg>
+                                Button
+                            </button>
+                        </div>
+                    </div>
+                </div>                <div class="product  pb-2 pb-sm-3">
+                    <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
+                        <span class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                        <button
+                            class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                            type="button" aria-label="Add to Favorites">
+                            <i class="ai-heart fs-xl text-nav"></i>
+                        </button>
+                        <img class="d-block mx-auto" src="./assets/img/01.319e7997.png" width="226" alt="Product">
+                    </div>
+                    <div class="d-flex mb-1">
+                        <h3 class="h6 mb-0">
+                            <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style
+                                lamp</a>
+                        </h3>
+                
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <span class="price ">210.00</span>
+                        <div class="nav ms-auto">
+                            <button type="button" class="btn btn-primary btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                    </path>
+                                </svg>
+                                Button
+                            </button>
+                        </div>
+                    </div>
+                </div>                <div class="product  pb-2 pb-sm-3">
+                    <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
+                        <span class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                        <button
+                            class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                            type="button" aria-label="Add to Favorites">
+                            <i class="ai-heart fs-xl text-nav"></i>
+                        </button>
+                        <img class="d-block mx-auto" src="./assets/img/01.319e7997.png" width="226" alt="Product">
+                    </div>
+                    <div class="d-flex mb-1">
+                        <h3 class="h6 mb-0">
+                            <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style
+                                lamp</a>
+                        </h3>
+                
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <span class="price ">210.00</span>
+                        <div class="nav ms-auto">
+                            <button type="button" class="btn btn-primary btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                    </path>
+                                </svg>
+                                Button
+                            </button>
+                        </div>
+                    </div>
+                </div>                <div class="product  pb-2 pb-sm-3">
+                    <div class="bg-body-tertiary mb-4 p-3 position-relative rounded-1">
+                        <span class="badge bg-danger bg-opacity-10 text-danger position-absolute top-0 start-0 mt-3 ms-3">Sale</span>
+                        <button
+                            class="btn btn-icon btn-sm btn-light bg-light border-0 rounded-circle position-absolute top-0 end-0 mt-3 me-3 z-5 opacity-0"
+                            type="button" aria-label="Add to Favorites">
+                            <i class="ai-heart fs-xl text-nav"></i>
+                        </button>
+                        <img class="d-block mx-auto" src="./assets/img/01.319e7997.png" width="226" alt="Product">
+                    </div>
+                    <div class="d-flex mb-1">
+                        <h3 class="h6 mb-0">
+                            <a class="fs-4 text-decoration-none text-light" href="product.html">Loft style
+                                lamp</a>
+                        </h3>
+                
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <span class="price ">210.00</span>
+                        <div class="nav ms-auto">
+                            <button type="button" class="btn btn-primary btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                                    </path>
+                                </svg>
+                                Button
+                            </button>
+                        </div>
+                    </div>
+                </div>                <!-- END Itesm -->
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Cart -->
+    <section class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCart">
+        <div data-commerce-cart="" class="offcanvas-body">
+            <div class="offcanvas-header p-0">
+                <div class="d-flex flex-grow-1 justify-content-between">
+    
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Корзина</h5>
+                    <a href="cart.html" class="btn btn-primary btn-sm">К заказу</a>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+            </div>
+            <div class="mt-3">
+                <div class="alert alert-success fs-6">
+                    Товары: <strong><span id="totalitems">4</span> шт.</strong> на 40 101,00 руб.
+                </div>
+                <ol class="list-group">
+                    <li data-id="5" data-commerce-row="b1d68bd1fb6921f7" class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="me-auto">
+                                <div class="fw-bold">Основной корпус машины</div>
+                                5 462,00 руб.
+                            </div>
+                            <span class="badge bg-primary rounded-pill">
+                                1
+                                <input type="hidden" name="count" class="form-control" value="1"
+                                    data-commerce-action="recount">
+                            </span>
+                        </div>
+    
+                        <div class="small text-muted mb-2">
+                            <span class="badge bg-black rounded-pill" color="">Белый</span> <span
+                                class="badge bg-black rounded-pill" stat="">Выбран чекбокс</span>
+                        </div>
+                        <div class="align-items-center d-flex mb-2 mt-3">
+                            <div class="input-group flex-nowrap">
+                                <input data-commerce-action="decrease" type="button" value=" - "
+                                    class=" btn btn-outline-primary btn-sm " data-field="quantity">
+                                <input data-commerce-action="increase" type="button" value=" + "
+                                    class=" btn btn-outline-primary  btn-sm " data-field="quantity">
+                            </div>
+                            <button class="btn btn-close btn-sm " type="button" data-commerce-action="remove"> </button>
+                        </div>
+                    </li>
+                    <li data-id="6" data-commerce-row="" class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="me-auto">
+                                <div class="fw-bold">Гнутьевая рабочая голова</div>
+                                12 965,00 руб.
+                            </div>
+                            <span class="badge bg-primary rounded-pill">
+                                1
+                                <input type="hidden" name="count" class="form-control" value="1"
+                                    data-commerce-action="recount">
+                            </span>
+                        </div>
+    
+                        <div class="small text-muted mb-2">
+    
+                        </div>
+                        <div class="align-items-center d-flex mb-2 mt-3">
+                            <div class="input-group flex-nowrap">
+                                <input data-commerce-action="decrease" type="button" value=" - "
+                                    class=" btn btn-outline-primary btn-sm " data-field="quantity">
+                                <input data-commerce-action="increase" type="button" value=" + "
+                                    class=" btn btn-outline-primary  btn-sm " data-field="quantity">
+                            </div>
+                            <button class="btn btn-close btn-sm " type="button" data-commerce-action="remove"> </button>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- END Cart -->
+    
+    
+    <!-- login -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="login_canvas" aria-labelledby="login_canvasLabel">
+    	<div class="offcanvas-header">
+    		<h5 class="offcanvas-title" id="login_canvasLabel">Login</h5>
+    		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    	</div>
+    	<div class="offcanvas-body">
+    		<div id="login_form_wrapper">
+    			<form method="POST" class="needs-validation " id="login_form">
+    				<input type="hidden" name="formid" value="login_form">
+    
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="email">
+    					<input type="text" name="email" class="form-control" id="login_email" placeholder="name@example.com"
+    						value="">
+    					<label for="login_email">Email</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="password">
+    					<input type="password" name="password" class="form-control" id="login_password"
+    						placeholder="Password">
+    					<label for="login_password">Password</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="mb-3 text-danger" data-messages></div>
+    				<div class="form-floating form-group mb-3">
+    
+    					<button class="w-100 btn btn-lg btn-primary" type="submit">
+    						<span class="spinner-border d-none spinner-border-sm"></span>Submit
+    					</button>
+    				</div>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="register_canvas" aria-labelledby="register_canvasLabel">
+    	<div class="offcanvas-header">
+    		<h5 class="offcanvas-title" id="register_canvasLabel">Register</h5>
+    		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    	</div>
+    	<div class="offcanvas-body">
+    		<div id="register_form_wrapper">
+    			<form method="POST" class="needs-validation " id="register_form">
+    				<input type="hidden" name="formid" value="register_form">
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="email">
+    					<input type="text" name="email" class="form-control" id="register_email"
+    						placeholder="name@example.com" value="">
+    					<label for="register_email">Email</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="password">
+    					<input type="password" name="password" class="form-control" id="register_password"
+    						placeholder="Password">
+    					<label for="register_password">Password</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="mb-3 text-danger" data-messages></div>
+    
+    				<div class="form-floating form-group mb-3">
+    					<div class="invalid-feedback"></div>
+    					<button class="w-100 btn btn-lg btn-primary" type="submit"><span
+    							class="spinner-border d-none spinner-border-sm"></span>Submit</button>
+    				</div>
+    			</form>
+    		</div>
+    
+    	</div>
+    </div>
+    <!-- END login -->
+    
+    <!-- ex modal -->
+    <div class="modal fade" id="FirstModal" tabindex="-1" aria-labelledby="FirstModalLabel" aria-hidden="true">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h1 class="modal-title fs-5" id="FirstModalLabel">Modal title</h1>
+    				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    			</div>
+    			<div class="modal-body"> ... </div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    				<button type="button" class="btn btn-primary">Savechanges</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- END ex modal -->    <footer class="bd-footer bg-black footer mt-auto py-3 bg-body-tertiary">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="align-items-center d-flex mb-2 mb-4 text-body-emphasis text-decoration-none" href="/">
+                        <span class="me-2">
+                            <svg class="text-bg-light " width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 6L8 12V16H12L18 10M14 6L17 3L21 7L18 10M14 6L18 10M10 4L4 4L4 20L20 20V14"
+                                    stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+    
+                        </span>
+                        МАГАЗИН
+                    </a>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">Задизайнено на голом бутстрапе в рамках уроков по Evolution CMS</li>
+                        <li class="mb-2">Можно распространять, продавать, сдавать в аренду ну или чего вы там ещё придумаете
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Товары</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">Форма</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/">Кепки</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/examples/">Футболки</a></li>
+                        <li class="mb-2"><a href="https://icons.getbootstrap.com/">Майки</a></li>
+                        <li class="mb-2"><a href="https://themes.getbootstrap.com/">Шорты</a></li>
+                        <li class="mb-2"><a href="https://blog.getbootstrap.com/">Обувь</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>О нас</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/">Про магазин</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Доставка</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Оплата</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Возврат</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Гарантии</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>О компании</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap" target="_blank"
+                                rel="noopener">Адреса и телефоны</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev" target="_blank"
+                                rel="noopener">Вакансии</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/icons" target="_blank" rel="noopener">Icons</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Наши соцсети</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues" target="_blank"
+                                rel="noopener">ВК</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions" target="_blank"
+                                rel="noopener">ТГ</a></li>
+                        <li class="mb-2"><a href="https://github.com/sponsors/twbs" target="_blank" rel="noopener">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    </body>
+
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark" class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <title>контактная страница</title>
+  <script  src="./assets/js/main.2d7c6386.js"></script>
+  <link rel="stylesheet" href="./assets/css/main.d6c7d66a.css">
+</head>
+
+<body class=" min-vh-100">
+    <main class="d-flex flex-column h-100 justify-content-between">
+        <header data-bs-theme="dark" class="pb-5">
+            <div class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container">
+        
+                    <!-- Brand -->
+                    <a class="navbar-brand  flex-lg-grow-0 flex-sm-grow-1 p-0 pe-sm-3" href="index.html">
+                        <span class="text-primary flex-shrink-0 me-2">
+                            <svg class="text-bg-light" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 6L8 12V16H12L18 10M14 6L17 3L21 7L18 10M14 6L18 10M10 4L4 4L4 20L20 20V14"
+                                    stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        МАГАЗИН
+                    </a>
+                    <!-- END Brand -->
+        
+                    <!-- Cart  -->
+                    <button class="btn btn-primary  fs-sm order-lg-3  d-sm-inline-flex  position-relative"
+                        href="cart.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                        aria-controls="offcanvasCart">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">5</span>
+        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2 d-lg-none d-block d-sm-none"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                        </svg>
+                        <span class="d-lg-block d-none d-sm-block">Корзина</span>
+                    </button>
+                    <!-- END Cart  -->
+        
+                    <!-- Hamburger -->
+                    <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <!-- ENDHamburger -->
+        
+                    <!-- Nav -->
+                    <nav class="collapse navbar-collapse" id="mainNavbar">
+                        <!-- Mainmenu -->
+                        <ul class="navbar-nav navbar-nav-scroll me-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="catalog.html" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Каталог товаров</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="catalog.html">Форма</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Кепки</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Футболки</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Майки</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Шорты</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Обувь</a></li>
+                                    <li><a class="dropdown-item" href="catalog.html">Мерч</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="text.html">Доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                        <!-- END Mainmenu -->
+        
+        
+        
+        
+                        <!-- user not logged -->
+                        <!-- 
+                        <ul class="navbar-nav navbar-nav-scroll me-3">
+                            <li class="nav-item position-relative">
+                                <a href="#" class="align-items-center dropdown-toggle justify-content-end text-decoration-none"
+                                    aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    Вход
+                                </a>
+                                <ul class="dropdown-menu shadow text-lg-end text-small">
+                                    <li><a href="#" class="dropdown-item" data-bs-toggle="offcanvas" data-bs-target="#login_canvas"
+                                        aria-controls="login_canvas">
+                                        Login
+                                    </a></li>
+                                    <li><a href="#" class="dropdown-item" data-bs-toggle="offcanvas"
+                                        data-bs-target="#register_canvas" aria-controls="register_canvas">
+                                        Register
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        -->
+                        <!-- END user not logged -->
+        
+        
+                        <!-- user is Logged -->
+                        <ul class="navbar-nav navbar-nav-scroll me-3">
+                            <li class="nav-item position-relative">
+                                <a href="/profile/"
+                                    class="align-items-center dropdown-toggle justify-content-end text-decoration-none"
+                                    aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    0test@mail.ru
+                                </a>
+                                <ul class="dropdown-menu shadow text-lg-end text-small">
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li><a class="dropdown-item" href="orders.html">Orders</a></li>
+        
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="?logout">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- END user is Logged -->
+                    </nav>
+                    <!-- END Nav -->
+                </div>
+            </div>
+        </header>        <div class=" container    py-5">
+            <nav aria-label="breadcrumb" class="">
+                <ul class="breadcrumb breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a itemscope="" itemtype="http://schema.org/Thing" itemprop="item" href="https://example.com/books">
+                            <span itemprop="name">Books</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumb-item">
+                        <a itemscope="" itemtype="http://schema.org/Thing" itemprop="item"
+                            href="https://example.com/books/sciencefiction">
+                            <span itemprop="name">Science Fiction</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+                        class="breadcrumb-item active">
+                        <a itemscope="" itemtype="http://schema.org/Thing" itemprop="item"
+                            href="https://example.com/books/sciencefiction/ancillaryjustice">
+                            <span itemprop="name">Ancillary Justice</span>
+                            </a>
+                        <meta itemprop="position" content="3">
+                    </li>
+                </ul>
+            </nav>            <section class="row">
+                <div class="col-12">
+                    <h1>Контакты</h1>
+
+
+                </div>
+
+                <div class="border-top pb-sm-3 pt-4">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pt-2">
+
+                        <!-- Address -->
+                        <div class="col pb-2">
+                            <h4 class="mb-lg-4">Address</h4>
+                            <p class="fs-lg fw-medium pb-3 mb-3">514 Magnolia St. Orlando, FL 32806</p>
+                            <a class="btn btn-primary" href="#">
+                                <i class="ai-map-pin me-1"></i>
+                                Get directions
+                            </a>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="col pb-2">
+                            <h4 class="mb-lg-4">Phone</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="pb-1 mb-2">
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Main office</span>
+                                    <a class="nav-link fs-lg p-0"
+                                        href="tel:+178632256033">+1&nbsp;(786)&nbsp;322&nbsp;560&nbsp;33</a>
+                                </li>
+                                <li class="pb-1 mb-2">
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Reception room</span>
+                                    <a class="nav-link fs-lg p-0"
+                                        href="tel:+178630056044">+1&nbsp;(786)&nbsp;300&nbsp;560&nbsp;44</a>
+                                </li>
+                                <li>
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Franchise</span>
+                                    <a class="nav-link fs-lg p-0"
+                                        href="tel:+178630050055">+1&nbsp;(786)&nbsp;300&nbsp;500&nbsp;55</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Schedule -->
+                        <div class="col pb-2">
+                            <h4 class="mb-lg-4">Schedule</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="pb-1 mb-2">
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Mon - Thu</span>
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-nav fs-lg fw-medium">10:00</span>
+                                        <span class="border-top mx-4" style="width: 36px; height: 1px;"></span>
+                                        <span class="text-nav fs-lg fw-medium">22:00</span>
+                                    </div>
+                                </li>
+                                <li class="pb-1 mb-2">
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Fri - Sat</span>
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-nav fs-lg fw-medium">10:00</span>
+                                        <span class="border-top mx-4" style="width: 36px; height: 1px;"></span>
+                                        <span class="text-nav fs-lg fw-medium">20:00</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="d-block fs-sm text-body-secondary mb-1">Sun</span>
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-nav fs-lg fw-medium">12:00</span>
+                                        <span class="border-top mx-4" style="width: 36px; height: 1px;"></span>
+                                        <span class="text-nav fs-lg fw-medium">16:00</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col pb-2">
+                            <h4 class="mb-lg-4">Email</h4>
+                            <a class="nav-link fs-lg p-0" href="mailto:email@example.com">email@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+    <section class="position-relative">
+        <div class="d-none d-xl-block" style="height: 400px;"></div>
+        <div class="d-none d-lg-block d-xl-none" style="height: 400px;"></div>
+        <div class="d-none d-md-block d-lg-none" style="height: 400px;"></div>
+        <div class="d-md-none" style="height:400px;"></div>
+        <div class="interactive-map position-absolute top-0 start-0 w-100 h-100">
+
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A65946ea648b913e9a26631d832814832839608dfd97f0d84960c17b4dbf88085&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </section>
+    <!-- Cart -->
+    <section class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCart">
+        <div data-commerce-cart="" class="offcanvas-body">
+            <div class="offcanvas-header p-0">
+                <div class="d-flex flex-grow-1 justify-content-between">
+    
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Корзина</h5>
+                    <a href="cart.html" class="btn btn-primary btn-sm">К заказу</a>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+            </div>
+            <div class="mt-3">
+                <div class="alert alert-success fs-6">
+                    Товары: <strong><span id="totalitems">4</span> шт.</strong> на 40 101,00 руб.
+                </div>
+                <ol class="list-group">
+                    <li data-id="5" data-commerce-row="b1d68bd1fb6921f7" class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="me-auto">
+                                <div class="fw-bold">Основной корпус машины</div>
+                                5 462,00 руб.
+                            </div>
+                            <span class="badge bg-primary rounded-pill">
+                                1
+                                <input type="hidden" name="count" class="form-control" value="1"
+                                    data-commerce-action="recount">
+                            </span>
+                        </div>
+    
+                        <div class="small text-muted mb-2">
+                            <span class="badge bg-black rounded-pill" color="">Белый</span> <span
+                                class="badge bg-black rounded-pill" stat="">Выбран чекбокс</span>
+                        </div>
+                        <div class="align-items-center d-flex mb-2 mt-3">
+                            <div class="input-group flex-nowrap">
+                                <input data-commerce-action="decrease" type="button" value=" - "
+                                    class=" btn btn-outline-primary btn-sm " data-field="quantity">
+                                <input data-commerce-action="increase" type="button" value=" + "
+                                    class=" btn btn-outline-primary  btn-sm " data-field="quantity">
+                            </div>
+                            <button class="btn btn-close btn-sm " type="button" data-commerce-action="remove"> </button>
+                        </div>
+                    </li>
+                    <li data-id="6" data-commerce-row="" class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="me-auto">
+                                <div class="fw-bold">Гнутьевая рабочая голова</div>
+                                12 965,00 руб.
+                            </div>
+                            <span class="badge bg-primary rounded-pill">
+                                1
+                                <input type="hidden" name="count" class="form-control" value="1"
+                                    data-commerce-action="recount">
+                            </span>
+                        </div>
+    
+                        <div class="small text-muted mb-2">
+    
+                        </div>
+                        <div class="align-items-center d-flex mb-2 mt-3">
+                            <div class="input-group flex-nowrap">
+                                <input data-commerce-action="decrease" type="button" value=" - "
+                                    class=" btn btn-outline-primary btn-sm " data-field="quantity">
+                                <input data-commerce-action="increase" type="button" value=" + "
+                                    class=" btn btn-outline-primary  btn-sm " data-field="quantity">
+                            </div>
+                            <button class="btn btn-close btn-sm " type="button" data-commerce-action="remove"> </button>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- END Cart -->
+    
+    
+    <!-- login -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="login_canvas" aria-labelledby="login_canvasLabel">
+    	<div class="offcanvas-header">
+    		<h5 class="offcanvas-title" id="login_canvasLabel">Login</h5>
+    		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    	</div>
+    	<div class="offcanvas-body">
+    		<div id="login_form_wrapper">
+    			<form method="POST" class="needs-validation " id="login_form">
+    				<input type="hidden" name="formid" value="login_form">
+    
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="email">
+    					<input type="text" name="email" class="form-control" id="login_email" placeholder="name@example.com"
+    						value="">
+    					<label for="login_email">Email</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="password">
+    					<input type="password" name="password" class="form-control" id="login_password"
+    						placeholder="Password">
+    					<label for="login_password">Password</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="mb-3 text-danger" data-messages></div>
+    				<div class="form-floating form-group mb-3">
+    
+    					<button class="w-100 btn btn-lg btn-primary" type="submit">
+    						<span class="spinner-border d-none spinner-border-sm"></span>Submit
+    					</button>
+    				</div>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="register_canvas" aria-labelledby="register_canvasLabel">
+    	<div class="offcanvas-header">
+    		<h5 class="offcanvas-title" id="register_canvasLabel">Register</h5>
+    		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    	</div>
+    	<div class="offcanvas-body">
+    		<div id="register_form_wrapper">
+    			<form method="POST" class="needs-validation " id="register_form">
+    				<input type="hidden" name="formid" value="register_form">
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="email">
+    					<input type="text" name="email" class="form-control" id="register_email"
+    						placeholder="name@example.com" value="">
+    					<label for="register_email">Email</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="form-floating form-group mb-3 " data-field-wrapper="password">
+    					<input type="password" name="password" class="form-control" id="register_password"
+    						placeholder="Password">
+    					<label for="register_password">Password</label>
+    					<div class="invalid-feedback"></div>
+    				</div>
+    				<div class="mb-3 text-danger" data-messages></div>
+    
+    				<div class="form-floating form-group mb-3">
+    					<div class="invalid-feedback"></div>
+    					<button class="w-100 btn btn-lg btn-primary" type="submit"><span
+    							class="spinner-border d-none spinner-border-sm"></span>Submit</button>
+    				</div>
+    			</form>
+    		</div>
+    
+    	</div>
+    </div>
+    <!-- END login -->
+    
+    <!-- ex modal -->
+    <div class="modal fade" id="FirstModal" tabindex="-1" aria-labelledby="FirstModalLabel" aria-hidden="true">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h1 class="modal-title fs-5" id="FirstModalLabel">Modal title</h1>
+    				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    			</div>
+    			<div class="modal-body"> ... </div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    				<button type="button" class="btn btn-primary">Savechanges</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- END ex modal -->    <footer class="bd-footer bg-black footer mt-auto py-3 bg-body-tertiary">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="align-items-center d-flex mb-2 mb-4 text-body-emphasis text-decoration-none" href="/">
+                        <span class="me-2">
+                            <svg class="text-bg-light " width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 6L8 12V16H12L18 10M14 6L17 3L21 7L18 10M14 6L18 10M10 4L4 4L4 20L20 20V14"
+                                    stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+    
+                        </span>
+                        МАГАЗИН
+                    </a>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">Задизайнено на голом бутстрапе в рамках уроков по Evolution CMS</li>
+                        <li class="mb-2">Можно распространять, продавать, сдавать в аренду ну или чего вы там ещё придумаете
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Товары</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">Форма</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/">Кепки</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/examples/">Футболки</a></li>
+                        <li class="mb-2"><a href="https://icons.getbootstrap.com/">Майки</a></li>
+                        <li class="mb-2"><a href="https://themes.getbootstrap.com/">Шорты</a></li>
+                        <li class="mb-2"><a href="https://blog.getbootstrap.com/">Обувь</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>О нас</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/">Про магазин</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Доставка</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Оплата</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Возврат</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Гарантии</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>О компании</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap" target="_blank"
+                                rel="noopener">Адреса и телефоны</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev" target="_blank"
+                                rel="noopener">Вакансии</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/icons" target="_blank" rel="noopener">Icons</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Наши соцсети</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues" target="_blank"
+                                rel="noopener">ВК</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions" target="_blank"
+                                rel="noopener">ТГ</a></li>
+                        <li class="mb-2"><a href="https://github.com/sponsors/twbs" target="_blank" rel="noopener">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    </body>
+
+</html>
